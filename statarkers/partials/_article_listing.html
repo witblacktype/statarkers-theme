@@ -1,4 +1,4 @@
-{{ entries:listing folder="blog" limit="{lim}" taxonomy="{tax}" }}
+{{ entries:listing folder="{fold}" limit="{lim}" taxonomy="{tax}" }}
 <article>
   <h2><a href="{{ url }}">{{ title }}</a></h2>
   <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
@@ -40,9 +40,7 @@
   NOTES
 ====================================
 
-If you rename your blog folder in the _content folder you must change the the name of the folder variable in the entries listing tag and the pagination tag.
-
-This partial displays a article listing. The partials are designed so that you can use them modularly in your templates.
+This partial displays an article listing. The partials are designed so that you can use them modularly in your templates. The variables which are used in the entries listing tag are set in the template which calls the partial e.g. look in the default template you will see three variables: fold, lim, and tax. It is here where you set thos value to whichever folder name the articles are reading from e.g. blog, the number of articles to display (lim) and wherether you are displaying taxonomies or not.
 
 For more information on partials see http://statamic.com/docs/core-template-tags/theme-helpers#partial.
 
