@@ -22,7 +22,7 @@
 
 {{# Add simple pagination: limit must equal entries limit #}}
 
-{{ entries:pagination folder="blog" limit="{lim}" taxonomy="{tax}" }}
+{{ entries:pagination folder="{fold}" limit="{lim}" taxonomy="{tax}" }}
 {{ if total_items > "{lim}" }}
 <div class="pagination">
   {{ if previous_page }}
