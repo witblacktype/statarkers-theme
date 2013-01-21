@@ -2,7 +2,7 @@
    <channel>
       <title><![CDATA[Your Website Name]]></title>
       <link>{{ _site_url }}</link>
-      <description>A description of your website.</description>
+      <description>{{ site_desc }}</description>
       <lastBuildDate>{{ entries:listing folder="blog" limit="1" }}{{ datestamp format="r" }}{{ /entries:listing }}</lastBuildDate>
       <language>en-us</language>
       <webMaster>you@example.com (Your Name)</webMaster>
