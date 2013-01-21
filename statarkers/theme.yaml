@@ -1,0 +1,18 @@
+###########################################################################################
+#
+#  THEME VARIABLES
+#
+###########################################################################################
+
+# Theme name
+theme_name: Statarkers
+
+# Comments + Disqus
+disqus_account: changeme
+show_comments: no
+
+# Blog
+blog_name: blog
+
+# Global text snippets
+no_results_text: "Sorry, no results found."

@@ -1,0 +1,22 @@
+type: date                     # see http://statamic.com/docs/control-panel/fieldsets#fieldsets-and-entries
+hide: yes                      # hide page from Add Page list
+
+fields:
+  categories:
+    display: Categories
+    required: false
+    type: tags
+  tags:                        # the template tag name -- in this example, {{ tags }}
+    display: Tags              # the control panel field label (optional)
+    required: false            # required: true/false for validation (optional, false by default)
+    default:                   # default value (optional)
+    type: tags                 # fieldtype (optional, text by default)
+    instructions: Add tags.    # instructions added above the field
+
+  content:
+    display: Article Content
+    required: false
+    default:
+    type: redactor
+    image_dir: assets/img
+    instructions: Add categories.

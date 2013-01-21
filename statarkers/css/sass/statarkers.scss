@@ -1,0 +1,55 @@
+//======================================
+// STATAMIC.SCSS
+//======================================
+
+// ==========================
+// COMPASS, VARIABLES, MIXINS
+// ==========================
+@import "compass";
+@import "variables";
+@import "mixins";
+
+// =================
+// CSS RESET
+// =================
+@import "normalize";
+
+// =================
+// TYPOGRAPHY STYLES
+// =================
+@import "typography";
+
+// =================
+// LAYOUT STYLES
+// =================
+@import "layout";
+
+// =================
+// NAVIGATION STYLES
+// =================
+@import "navigation";
+
+// =================
+// LIST STYLES
+// =================
+@import "lists";
+
+// =================
+// LINK STYLES
+// =================
+@import "links";
+
+// =================
+// TABLE STYLES
+// =================
+@import "tables";
+
+// =================
+// FORM STYLES
+// =================
+@import "forms";
+
+// =================
+// MEDIA QUERIES STYLES
+// =================
+@import "_media_queries";

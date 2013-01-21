@@ -1,0 +1,8 @@
+<nav role="navigation">
+  <ul>
+    <li><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }}>Home</a></li>
+    {{ nav from="/" max_depth="1" }}
+    <li><a href="{{ url }}" {{ if is_current }} class="current"{{ endif }}>{{ title }}</a></li>
+    {{ /nav }}
+  </ul>
+</nav>

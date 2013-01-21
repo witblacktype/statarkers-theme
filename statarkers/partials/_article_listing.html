@@ -1,0 +1,49 @@
+{{ entries:listing folder="blog" limit="{lim}" taxonomy="{tax}" }}
+<article>
+  <h2><a href="{{ url }}">{{ title }}</a></h2>
+  <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
+
+  {{ if categories_list && tags_list }}
+  <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
+  {{ endif }}
+
+  {{ if categories_list && !tags_list }}
+  <p>Filed under: {{ categories_url_list }}</p>
+  {{ endif }}
+
+  {{ if !categories_list && tags_list }}
+  <p>Tagged with: {{ tags_url_list }}</p>
+  {{ endif }}
+
+  {{ summary|markdown }}
+
+</article>
+{{ /entries:listing }}
+
+{{# Add simple pagination: limit must equal entries limit #}}
+
+{{ entries:pagination folder="blog" limit="{lim}" taxonomy="{tax}" }}
+{{ if total_items > "{lim}" }}
+<div class="pagination">
+  {{ if previous_page }}
+    <a href="{{ previous_page }}" class="prev">Previous Page</a>
+  {{ endif }}
+  {{ if next_page }}
+    <a href="{{ next_page }}" class="next">Next Page</a>
+  {{ endif }}
+</div>
+{{ endif }}
+{{ /entries:pagination }}
+
+{{# 
+====================================
+  NOTES
+====================================
+
+If you rename your blog folder in the _content folder you must change the the name of the folder variable in the entries listing tag and the pagination tag.
+
+This partial displays a article listing. The partials are designed so that you can use them modularly in your templates.
+
+For more information on partials see http://statamic.com/docs/core-template-tags/theme-helpers#partial.
+
+#}}
