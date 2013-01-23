@@ -12,7 +12,14 @@ fields:
     default:                   # default value (optional)
     type: tags                 # fieldtype (optional, text by default)
     instructions: Add tags.    # instructions added above the field
-
+    
+  summary:
+    display: Summary
+    required: true
+    default:
+    type: textarea
+    instructions: Add a short summary for the article here.
+    
   content:
     display: Article Content
     required: false
