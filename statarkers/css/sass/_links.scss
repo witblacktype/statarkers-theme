@@ -1,3 +1,7 @@
 // =====================================
 // Add your generic link styles here.
 // =====================================
+
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+}
