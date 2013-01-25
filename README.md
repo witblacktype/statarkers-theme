@@ -15,7 +15,7 @@ Happy Statamic Themeing!
 To install the theme follow the instructions below.
 
 1. [Install Statamic:](http://statamic.com/docs/getting-started/installing-and-updating). **Don't forget to set up your .htaccess file**.
-2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme folder **the statarkers theme is located inside this**.
+2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme folder **the statarkers theme is located inside this folder**.
 3. Rename the Statarkers theme folder to the name of your theme. From now on we will still refer to the Statarkers theme folder but this will now be whatever you rename it to.
 4. Change them name of the statarkers.js file (located in the js folder) to the name of your theme.
 5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css file to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.
