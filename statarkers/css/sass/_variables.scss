@@ -18,5 +18,12 @@ $white: rgb(255, 255, 255);
 // site colours
 
 $maincolor: rgb(45, 53, 56);
-$offwhite: rgb(253, 246, 227);
 $compcolor: rgb(88, 236, 118);
+
+// links
+
+$normal: $black;
+$hover: $compcolor;
+$active: $compcolor;
+$visited: $black;
+$focus: $compcolor;

@@ -14,11 +14,11 @@ Happy Statamic Themeing!
 
 To install the theme follow the instructions below.
 
-1. Install Statamic: http://statamic.com/docs/getting-started/installing-and-updating.
-2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme folder the statatarkers theme is located inside this.
+1. [Install Statamic:](http://statamic.com/docs/getting-started/installing-and-updating). **Don't forget to set up your .htaccess file**.
+2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme folder **the statarkers theme is located inside this folder**.
 3. Rename the Statarkers theme folder to the name of your theme. From now on we will still refer to the Statarkers theme folder but this will now be whatever you rename it to.
-4. Change them name of the statarkers.js file (located in the js folder) to the name of your theme and change the same name in the default layouts template where the script tag references it.
-5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css file to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.In the _doc_head.html file change the reference to the statarkers css file to the name of your theme.
+4. Change them name of the statarkers.js file (located in the js folder) to the name of your theme.
+5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css file to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.
 6. In the Statarkers theme folder open the config.rb file and change the http path to /themes/yourThemeName instead of /themes/statarkers.
 7. If you would like to use the dummy content provided with the Statarkers theme (recommended) then delete the contents of your existing _content folder and copy the files and folders from the statarkers-theme _content folder.
 8. In your Statamic install go to _config settings YAML file and change the _theme name from denali to the name you have given to your theme. If this is a clean install you should also change the site name and url to whatever you are using. We suggest also changing the _taxonomy_slugify to true as this gives you cleaner url's.

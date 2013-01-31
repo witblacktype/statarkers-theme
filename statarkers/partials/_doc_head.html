@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
+
 {{ theme:partial src="_meta" }}
 
 {{# Uncomment for responsive sites.
@@ -13,7 +14,7 @@
 
 {{# Change the name of statarkers to the name of your theme. #}}
 <!--[if gte IE 8]><!-->
-<link rel="stylesheet" href="{{ theme:css src='statarkers' }}">
+<link rel="stylesheet" href="{{ theme:css }}">
 <!--<![endif]-->
 
 <!--[if lte IE 7]>
@@ -21,7 +22,7 @@
 <![endif]-->
 
 {{# Change the title to the name of your feed. #}}
-<link rel="alternate" type="application/rss+xml" href="{{ _site_url }}/feed" title="The Name of Your Feed">
+<link rel="alternate" type="application/rss+xml" href="{{ _site_url }}/feed" title="{{ _site_name }} RSS Feed">
 
 <script src="{{ theme:js src="libs/modernizr_dev" }}"></script>
 
