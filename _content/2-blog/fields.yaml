@@ -25,5 +25,5 @@ fields:
     required: false
     default:
     type: redactor
-    image_dir: assets/img
+    image_dir: assets/img/blog
     instructions: Add categories.
