@@ -2,7 +2,7 @@
 
 Born from the idea of a blank canvas for starting your Statamic sites this theme is loosely based on the popular [Starkers](http://viewportindustries.com/products/starkers/) theme for Wordpress. The idea being that you can load this theme into your Statamic themes folder, add the dummy content and get designing and building your Statamic sites in even less time than you were already.
 
-Normalize is used to reset browser defaults ans SASS is used to make your CSS life easy. Each template is marked up with some helpful user notes. A development version of modernizr is included but we recommend that you tailor this to your site's requirements. To finish off there are plenty of html5 boilerplate best practices in the document head file.
+Normalize is used to reset browser defaults ans SASS is used to make your CSS life easy. Each template is marked up with some helpful user notes. A development version of modernizr is included but we recommend that you tailor this to your site's requirements. To help with older browser support [DOMAssistant](http://www.domassistant.com/) and [Selectivir](http://selectivizr.com/) are also conditionally loaded for IE8. To finish off there are plenty of html5 boilerplate best practices in the document head and jQuery is included as standard.
 
 Out of the box Statarkers supports IE8/9 and all modern browsers. To provide a basic layout for older browsers (IE7 & below) we use Andy Clarke's universal stylesheet http://stuffandnonsense.co.uk/blog/about/universal_internet_explorer_6_css. The scripts in the default layout template use conditional comments to stop them loading below IE8. If you would like to support IE7 & below you can remove these elements. 
 
