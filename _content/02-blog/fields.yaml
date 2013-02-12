@@ -10,6 +10,7 @@ fields:
     display: Categories
     required: false
     type: tags
+    instructions: Add categories.
     
   tags:                        # the template tag name -- in this example, {{ tags }}
     display: Tags              # the control panel field label (optional)
@@ -31,4 +32,4 @@ fields:
     default:
     type: redactor
     image_dir: assets/img/blog
-    instructions: Add categories.
+    instructions: Add the main article content here.
