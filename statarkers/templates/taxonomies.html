@@ -1,4 +1,4 @@
-<section>
+<section role="main">
   {{ if segment_2 == "categories" }}
   <h2>Article Category: {{ taxonomy_slug|deslugify|title }}</h2>
   {{ endif }}
@@ -7,7 +7,7 @@
   {{ endif }}
 
   {{ theme:partial src="_article_listing" fold="blog" lim="5" tax="yes" }}
-</section>
+</section><!-- END role="main" -->
 
 {{# 
 ====================================
