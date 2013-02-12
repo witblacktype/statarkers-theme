@@ -1,23 +1,35 @@
-{{ entries:listing folder="{fold}" limit="{lim}" taxonomy="{tax}" }}
-<article>
-  <h2><a href="{{ url }}">{{ title }}</a></h2>
-  <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
+{{ entries:listing folder="{fold}" limit="{lim}" taxonomy="{tax}" status="draft" }}
+{{ if count == "1" }}
+<ol>
+{{ endif }}
+  <li>
+    <article>
+      <h2><a href="{{ url }}">{{ title }}</a></h2>
+      <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
 
-  {{ if categories_list && tags_list }}
-  <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
-  {{ endif }}
+      {{ if categories_list && tags_list }}
+      <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
+      {{ endif }}
 
-  {{ if categories_list && !tags_list }}
-  <p>Filed under: {{ categories_url_list }}</p>
-  {{ endif }}
+      {{ if categories_list && !tags_list }}
+      <p>Filed under: {{ categories_url_list }}</p>
+      {{ endif }}
 
-  {{ if !categories_list && tags_list }}
-  <p>Tagged with: {{ tags_url_list }}</p>
-  {{ endif }}
+      {{ if !categories_list && tags_list }}
+      <p>Tagged with: {{ tags_url_list }}</p>
+      {{ endif }}
 
-  {{ summary|markdown }}
+      {{ summary|markdown }}
+    </article>
+  </li>
+{{ if count == total_results }}
+</ol>
+{{ endif }}
 
-</article>
+{{ if no_results }}
+<p>Sorry there are no entries to display at this time.</p>
+{{ endif }}
+
 {{ /entries:listing }}
 
 {{# Add simple pagination: limit must equal entries limit #}}
