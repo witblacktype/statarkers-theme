@@ -2,10 +2,15 @@ type: date                     # see http://statamic.com/docs/control-panel/fiel
 hide: yes                      # hide page from Add Page list
 
 fields:
+  status:
+    display: Status
+    type: status
+
   categories:
     display: Categories
     required: false
     type: tags
+    
   tags:                        # the template tag name -- in this example, {{ tags }}
     display: Tags              # the control panel field label (optional)
     required: false            # required: true/false for validation (optional, false by default)
