@@ -1,50 +1,59 @@
-{{ entries:listing folder="{fold}" limit="{lim}" taxonomy="{tax}" }}
-{{ if count == "1" }}
-<ol>
-{{ endif }}
-  <li>
-    <article>
-      <h2><a href="{{ url }}">{{ title }}</a></h2>
-      <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
+{{ entries:listing
+  folder="{fold}"
+  limit="{lim}"
+  taxonomy="{tax}"
+}}
+  {{ if no_results }}
+  <p>Sorry there are no entries to display at this time.</p>
+  {{ else }}
 
-      {{ if categories_list && tags_list }}
-      <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
-      {{ endif }}
+    {{ if count == "1" }}
+    <ol>
+    {{ endif }}
+      <li>
+        <article>
+          <h2><a href="{{ url }}">{{ title }}</a></h2>
+          <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
 
-      {{ if categories_list && !tags_list }}
-      <p>Filed under: {{ categories_url_list }}</p>
-      {{ endif }}
+          {{ if categories_list && tags_list }}
+          <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
+          {{ endif }}
 
-      {{ if !categories_list && tags_list }}
-      <p>Tagged with: {{ tags_url_list }}</p>
-      {{ endif }}
+          {{ if categories_list && !tags_list }}
+          <p>Filed under: {{ categories_url_list }}</p>
+          {{ endif }}
 
-      {{ summary|markdown }}
-    </article>
-  </li>
-{{ if count == total_results }}
-</ol>
-{{ endif }}
+          {{ if !categories_list && tags_list }}
+          <p>Tagged with: {{ tags_url_list }}</p>
+          {{ endif }}
 
-{{ if no_results }}
-<p>Sorry there are no entries to display at this time.</p>
-{{ endif }}
+          {{ summary|markdown }}
+        </article>
+      </li>
+    {{ if count == total_results }}
+    </ol>
+    {{ endif }}
 
+  {{ endif }}
 {{ /entries:listing }}
 
 {{# Add simple pagination: limit must equal entries limit #}}
 
-{{ entries:pagination folder="{fold}" limit="{lim}" taxonomy="{tax}" }}
-{{ if total_items > "{lim}" }}
-<div class="pagination">
-  {{ if previous_page }}
-    <a href="{{ previous_page }}" class="prev">&larr; Previous Page</a>
+{{ entries:pagination
+    folder="{fold}"
+    limit="{lim}"
+    taxonomy="{tax}"
+  }}
+  {{ if total_items > "{lim}" }}
+  <div class="pagination">
+    {{ if previous_page }}
+      <a href="{{ previous_page }}" class="prev">&larr; Previous Page</a>
+    {{ endif }}
+    {{ if next_page }}
+      <a href="{{ next_page }}" class="next">Next Page &rarr;</a>
+    {{ endif }}
+  </div><!-- END .pagination -->
   {{ endif }}
-  {{ if next_page }}
-    <a href="{{ next_page }}" class="next">Next Page &rarr;</a>
-  {{ endif }}
-</div><!-- END .pagination -->
-{{ endif }}
 {{ /entries:pagination }}
 
 {{# 
