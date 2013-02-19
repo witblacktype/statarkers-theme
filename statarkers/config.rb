@@ -3,7 +3,7 @@
 # Change statarkers to the name of your theme folder:
 http_path = "/themes/statarkers/"
 css_dir = "css"        
-sass_dir = "css/sass"
+sass_dir = "sass"
 images_dir = "img"
 javascripts_dir = "js"
 fonts_dir = "fonts"
