@@ -44,7 +44,8 @@
     limit="{lim}"
     taxonomy="{tax}"
   }}
-  {{ if total_items > "{lim}" }}
+  {{# THIS SHOULD USE LIM VARIABLE BUT DOESN'T WORK - FIX COMING 1.5 #}}
+  {{ if total_items > "5" }}
   <div class="pagination">
     {{ if previous_page }}
       <a href="{{ previous_page }}" class="prev">&larr; Previous Page</a>
