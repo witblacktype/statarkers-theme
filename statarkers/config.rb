@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 # Change statarkers to the name of your theme folder:
-http_path = "/themes/statarkers/"
+http_path = "/_themes/statarkers/"
 css_dir = "css"        
 sass_dir = "sass"
 images_dir = "img"
