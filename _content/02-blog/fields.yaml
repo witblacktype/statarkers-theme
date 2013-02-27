@@ -1,6 +1,8 @@
 type: date                     # see http://statamic.com/docs/control-panel/fieldsets#fieldsets-and-entries
 hide: yes                      # hide page from Add Page list
 
+include: meta                  # include the meta fields
+
 fields:
   status:
     display: Status
