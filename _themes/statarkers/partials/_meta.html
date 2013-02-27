@@ -1,20 +1,15 @@
-{{# HOME =============== #}}
+{{# TOP LEVEL PAGES === #}}
 
-{{ if segment_1 == "" }}
+{{ if segment_2 == "" }}
 <title>{{ meta_title }} | {{ _site_name }}</title>
 <meta name="description" content="{{ meta_desc }}">
 {{ endif }}
 
 {{# BLOG =============== #}}
 
-{{ if segment_1 == "blog" &&  segment_2 == "" }}
+{{ if segment_1 == "blog" && segment_2 != "" && segment_3 == "" }}
 <title>{{ meta_title }} | {{ _site_name }}</title>
 <meta name="description" content="{{ meta_desc }}">
-{{ endif }}
-
-{{ if segment_1 == "blog" && segment_2 != "" && segment_3 == "" }}
-<title>{{ title }} | {{ _site_name }}</title>
-<meta name="description" content="{{ summary|markdown|striptags }}">
 {{ endif }}
 
 {{ if segment_1 == "blog" && segment_2 == "categories" }}
