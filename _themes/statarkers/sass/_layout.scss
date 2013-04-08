@@ -2,7 +2,7 @@
 // Add all your main layout styles here.
 // =====================================
 
-html {
+* {
   @include box-sizing(border-box);
 }
 .wrapper {
