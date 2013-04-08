@@ -25,7 +25,16 @@ footer[role="contentinfo"] { padding: 2em; }
     float: right;
   }
 }
-
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+}
+body {
+  color: $darkgrey;
+}
+small {
+  display: block;
+  text-align: center;
+}
 
 // Layout Helpers
 // html {
