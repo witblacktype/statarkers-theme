@@ -1,6 +1,6 @@
 <rss version="2.0">
    <channel>
-      <title><![CDATA[Your Website Name]]></title>
+      <title><![CDATA[{{ _site_name }}]]></title>
       <link>{{ _site_url }}</link>
       <description>{{ site_desc }}</description>
       <lastBuildDate>{{ entries:listing folder={{ blog_name }} limit="1" }}{{ datestamp format="r" }}{{ /entries:listing }}</lastBuildDate>
@@ -17,7 +17,7 @@
          <guid>{{ permalink }}</guid>
          <category>article</category>
          <pubDate>{{ datestamp format="r" }}</pubDate>
-         <description><![CDATA[{{ summary }}]]></description>
+         <description><![CDATA[{{ summary|markdown }}]]></description>
          </item>
       {{ /entries:listing }}
    </channel>
