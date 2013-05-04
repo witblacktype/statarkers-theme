@@ -9,16 +9,11 @@
 
 {{# BLOG =============== #}}
 
-{{ if segment_1 == "blog" && segment_2 == "" }}
+{{ if segment_1 == "blog" && (segment_2 != "categories" || segment_2 != "tags") && segment_3 == "" }}
   <title>{{ if meta_title }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   {{ if meta_desc }}
   <meta name="description" content="{{ meta_desc|striptags }}">
   {{ endif }}
-{{ endif }}
-
-{{ if segment_1 == "blog" && (segment_2 != "categories" || segment_2 != "tags") }}
-  <title>{{ if meta_title }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
-  <meta name="description" content="{{ summary|striptags }}">
 {{ endif }}
 
 {{ if segment_1 == "blog" && segment_2 == "categories" }}
