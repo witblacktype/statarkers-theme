@@ -23,3 +23,4 @@ To install the theme follow the instructions below.
 7. Delete the contents of your Statamic install fieldsets folder then copy the new fieldsets from the Statarkers folder (located in _config/fieldsets).
 8. If you would like to use the dummy content provided with the Statarkers theme (recommended) then delete the contents of your existing _content folder and copy the files and folders from the Statarkers _content folder.
 9. In your Statamic install go to _config settings YAML file and change the _theme name from denali to the name you have given to your theme. If this is a clean install you should also change the site name and url to whatever you are using. We suggest also changing the _taxonomy_slugify to true as this gives you cleaner url's.
+10. Add the gitignore file to the root of your project/site, in here there are some handy ignores for Statamic.
