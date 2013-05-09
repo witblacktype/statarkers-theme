@@ -1,0 +1,7 @@
+hide: yes
+
+fields:
+  content:
+    type: hidden
+
+# Once you can hide pages from the admin area this fieldset could deleted. Until then it ensures there are no fields to display if the sitemap is clicked on in the admin area.
