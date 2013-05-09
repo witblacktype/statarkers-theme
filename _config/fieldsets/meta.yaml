@@ -9,3 +9,5 @@ fields:
     instructions: Enter a short description to display in Google's search results roughly 155 characters.
 
 hide: true
+
+# These are the meta fields which enable you to add a meta title and description used by search engines.
