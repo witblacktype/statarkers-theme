@@ -1,18 +1,19 @@
 title: Standard Page
-
 include: meta                  # include the meta fields
 
 fields:
   _template:
-    display: Template
-    type:templates
+    display:
+    type: hidden
+    default: page
 
   title:
-    default: Default Value
-    instructions: These are instructions.
+    default: Page Title
+    instructions: Enter the main page title here.
 
   content:
     display: Page Content
     required: false
-    default:
     type: redactor
+    
+# This is the standard page fieldset it pulls in the meta fields and sets the template to always use the page template.
