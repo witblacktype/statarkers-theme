@@ -1,5 +1,6 @@
 ---
+_type: rss
 _layout: sitemap
 _template: sitemap
-_type: rss
+_fieldset: sitemap
 ---
