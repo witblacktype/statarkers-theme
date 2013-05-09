@@ -5,7 +5,6 @@ categories:
 tags:
   - Cakes
 featured: no
-author: Gareth
 status: live
 summary: Tootsie roll brownie donut marzipan cheesecake jelly beans halvah. Jelly beans ice cream icing biscuit. Halvah fruitcake chocolate fruitcake chocolate cake muffin soufflé.
 ---
