@@ -4,3 +4,6 @@ include: meta                  # include the meta fields
 fields:
   content:
     type: hidden
+    
+# This is the "no content" fieldset it can be used for pages that you want to show in the navigation but do not have any content.
+# Example: blog page that lists all the latest articles.
