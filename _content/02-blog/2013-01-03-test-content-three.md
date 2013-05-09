@@ -5,7 +5,6 @@ categories:
 tags:
   - Cakes
 featured: no
-author: Gareth
 status: live
 summary: Cupcake icing toffee cookie lemon drops. Muffin danish candy ice cream bear claw caramels. Halvah dragée croissant liquorice. Jujubes powder sweet brownie jelly-o caramels pie chocolate bar.
 ---
