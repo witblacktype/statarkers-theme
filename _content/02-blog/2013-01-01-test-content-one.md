@@ -5,7 +5,6 @@ categories:
 tags:
   - HTML Content
 featured: no
-author: Gareth
 status: live
 summary: This is the kitchen sink, all the common html elements laid out for you to add styling, really helpful to make sure you don't miss any styles.
 ---
