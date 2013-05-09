@@ -1,4 +1,11 @@
+<section role="main">
+  <h2>{{ title }}</h2>
+  {{ content }}
+</section><!-- END role="main" -->
+
+<section class="articles">
 {{ theme:partial src="_article_listing" fold="{{ blog_name }}" lim="5" tax="no" }}
+</section>
 
 {{# 
 ====================================
@@ -18,4 +25,3 @@ the limit (number of posts to display). Change the lim="5" variable to however m
 posts you would like to display.
   
 #}}
-
