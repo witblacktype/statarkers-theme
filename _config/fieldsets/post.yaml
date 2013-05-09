@@ -4,6 +4,7 @@ fields:
   status:
     display: Status
     type: status
+    instructions: "Select if the article is live (displays on the site), hidden/draft (will not display on the site)."
 
   categories:
     display: Categories
