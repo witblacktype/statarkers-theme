@@ -1,4 +1,5 @@
 include: meta                  # include the meta fields
+hide: yes
 
 fields:
   status:
