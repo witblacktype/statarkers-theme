@@ -20,16 +20,11 @@
 @import "base";
 
 // =================
-// NAVIGATION STYLES
-// =================
-@import "navigation";
-
-// =================
 // FORM STYLES
 // =================
-@import "forms";
+@import "layout";
 
 // =================
-// MEDIA QUERIES STYLES
+// NAVIGATION STYLES
 // =================
-@import "_media_queries";
+@import "module";
