@@ -1,5 +1,5 @@
 {{ theme:partial src="_doc_head" }}
-<body>
+<body class="{{ if segment_1 == "" }}home{{ else }}{{ segment_1 }}{{ endif }}">
   
   <div class="container">
     {{ theme:partial src="_header" }}
