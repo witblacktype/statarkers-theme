@@ -3,7 +3,6 @@ include: meta                  # include the meta fields
 
 fields:
   _template:
-    display:
     type: hidden
     default: page
 
@@ -13,7 +12,6 @@ fields:
 
   content:
     display: Page Content
-    required: false
     type: redactor
     
 # This is the standard page fieldset it pulls in the meta fields and sets the template to always use the page template.
