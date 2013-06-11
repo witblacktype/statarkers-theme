@@ -28,5 +28,5 @@ fields:
   content:
     display: Article Content
     type: redactor
-    image_dir: assets/img/blog
+    image_dir: assets/img/blog  #make sure the folder exists and is writeable
     instructions: Add the main article content here.
