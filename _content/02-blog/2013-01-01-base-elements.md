@@ -68,6 +68,11 @@ This wraps your code in a `pre` tags and `code` tags.
       <th>Heading (th)</th>
     </tr>
   </thead>
+  <tfoot>
+    <tr>
+      <td colspan="2">Footer Note</td>
+    </tr> 
+  </tfoot>
   <tbody>
     <tr>
       <td>data</td>
