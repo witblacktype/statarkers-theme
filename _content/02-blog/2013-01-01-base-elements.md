@@ -70,7 +70,7 @@ This wraps your code in a `pre` tags and `code` tags.
   </thead>
   <tfoot>
     <tr>
-      <td colspan="2">Footer Note</td>
+      <td colspan="4">Footer Note</td>
     </tr> 
   </tfoot>
   <tbody>
