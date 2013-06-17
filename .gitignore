@@ -1,4 +1,5 @@
 .sass-cache
 .DS_Store
-_cache/
-_logs/
+_cache/_app/
+_cache/assets/
+*.log
