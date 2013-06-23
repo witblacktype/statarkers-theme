@@ -27,6 +27,12 @@
           <p>Tagged with: {{ tags_url_list }}</p>
           {{ endif }}
 
+          {{ if main_img|not_empty }}
+          {{ image src="{{ main_img }}" dim="400x300(" }}
+          <img src="{{ image_url }}" class="media-object" alt="">
+          {{ /image }}
+          {{ endif }}
+
           {{ summary|markdown }}
           
         </article>

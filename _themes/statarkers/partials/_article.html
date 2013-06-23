@@ -16,6 +16,12 @@
     {{ endif }}
   </header>
 
+  {{ if main_img|not_empty }}
+  {{ image src="{{ main_img }}" dim="550x400(" }}
+  <img src="{{ image_url }}" alt="">
+  {{ /image }}
+  {{ endif }}
+
   {{ content }}
   
   <footer>
