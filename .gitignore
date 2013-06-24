@@ -3,3 +3,5 @@
 _cache/_app/
 _cache/assets/
 *.log
+
+# These are some useful ignores for Statamic theme building. #
