@@ -1,7 +1,10 @@
----
-title: Sitemap
-_type: xml
-_layout: sitemap
-_template: sitemap
-_fieldset: sitemap
----
+hide: yes
+
+fields:
+  title:
+    default: Sitemap
+
+  content:
+    type: hidden
+    
+# This is the sitemap fieldset
