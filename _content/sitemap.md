@@ -1,6 +1,7 @@
 ---
-_type: rss
+title: Sitemap
+_type: xml
 _layout: sitemap
 _template: sitemap
-_fieldset: no_content
+_fieldset: sitemap
 ---
