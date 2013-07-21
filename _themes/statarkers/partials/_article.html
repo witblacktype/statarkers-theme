@@ -1,7 +1,10 @@
 <article>
   <header>
     <h2>{{ title }}</h2>
+    
+    {{ if date }}
     <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
+    {{ endif }}
 
     {{ if categories_list && tags_list }}
     <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
