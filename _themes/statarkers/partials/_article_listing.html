@@ -13,8 +13,11 @@
       <li>
         <article>
           <h3><a href="{{ url }}">{{ title }}</a></h3>
+          
+          {{ if date }}
           <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
-
+          {{ endif }}
+          
           {{ if categories_list && tags_list }}
           <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
           {{ endif }}
