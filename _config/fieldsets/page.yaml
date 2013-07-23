@@ -11,7 +11,7 @@ fields:
     default: page
 
   content:
-    display: Page Content
+    display: Page Main Content
     type: redactor
     image_dir: assets/img/page  #make sure the folder exists and is writeable
     instructions: "Add the main page content here."

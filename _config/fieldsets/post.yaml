@@ -36,7 +36,7 @@ fields:
     instructions: "Add a short summary for the article here."
     
   content:
-    display: Article Content
+    display: Article Main Content
     type: redactor
     image_dir: assets/img/blog  #make sure the folder exists and is writeable
     instructions: "Add the main article content here."
