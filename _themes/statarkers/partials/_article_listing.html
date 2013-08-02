@@ -36,7 +36,6 @@
             width="400"
             height="300"
             action="smart"
-            destination="/assets/img/{{ segment_1 }}/thumbs/"
           }}" alt="">
           {{ endif }}
 
@@ -78,7 +77,7 @@
 
 This partial displays an article listing. The partials are designed so that you can use them modularly in your templates. The variables which are used in the entries listing tag are set in the template which calls the partial e.g. look in the default template you will see three variables: fold, lim, and tax. It is here where you set those values to whichever folder name the articles are reading from e.g. blog, the number of articles to display (lim) and whether you are displaying taxonomies or not.
 
-The images are using the transform tag which caches images, for this to work you need to set up the correct folders in your assets directory with the writeable permissions.
+The images are using the transform tag which caches images, for this to work you need to set up a cache folder in your assets/img directory with the writeable permissions. You then need to set this as your default location in your settings file: _transform_destination: assets/img/cache/
 
 For more information on partials see http://statamic.com/learn/theming/partials.
 
