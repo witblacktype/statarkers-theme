@@ -6,10 +6,6 @@ fields:
     default: Page Title
     instructions: "Enter the main page title here."
 
-  _template:
-    type: hidden
-    default: page
-
   content:
     display: Page Main Content
     type: redactor
