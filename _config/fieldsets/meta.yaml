@@ -9,5 +9,9 @@ fields:
     display: Page Meta Description
     type: text
     instructions: "Enter a short description to display in search engine results roughly 155 characters."
-
+  alt_title:
+    display: Alternative Title
+    type: text
+    instructions: "This will display as the first heading on the page, and can be more descriptive than the main title."
+    
 # These are the meta fields which enable you to add a meta title and description used by search engines.
