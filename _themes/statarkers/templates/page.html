@@ -6,3 +6,9 @@
   {{ endif }}
   {{ content }}
 </section><!-- END role="main" -->
+
+{{ if segment_1 == "" }}
+<section class="articles">
+{{ theme:partial src="_article_listing" fold="{blog_name}" lim="5" tax="no" }}
+</section>
+{{ endif }}
