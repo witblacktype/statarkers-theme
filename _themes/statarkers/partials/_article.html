@@ -32,7 +32,13 @@
   }}" alt="">
   {{ endif }}
 
+  <div class="summary">
+  {{ summary|markdown|smartypants }}
+  </div><!-- END .summary -->
+
+  <div class="main-content">
   {{ content }}
+  </div><!-- END .main-content -->
   
   <footer>
     <a href="/" class="btn back">&larr; back</a>
