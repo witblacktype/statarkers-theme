@@ -1,6 +1,10 @@
 <article>
   <header>
+    {{ if alt_title }}
+    <h2>{{ alt_title }}</h2>
+    {{ else }}
     <h2>{{ title }}</h2>
+    {{ endif }}
     
     {{ if date }}
     <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
