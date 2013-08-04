@@ -1,6 +1,9 @@
 <header role="banner">
-  <h1><a href="{{ _site_url }}">{{ _site_name }}</a></h1>
-  {{ theme:partial src="_nav" }}
+  <div class="container">
+    <h1><a href="{{ _site_url }}">{{ _site_name }}</a></h1>
+    <h2>{{ tag_line }}</h2>
+    {{ theme:partial src="_nav" }}
+  </div><!-- END .container -->
 </header>
 
 {{# 
