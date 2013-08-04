@@ -7,6 +7,9 @@
 # Theme name
 theme_name: Statarkers
 
+# Theme Tag Line
+tag_line: "A bare-bones Statamic theme"
+
 # Comments + Disqus
 disqus_account: changeme
 show_comments: no
