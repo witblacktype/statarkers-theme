@@ -7,7 +7,7 @@
   <p>Sorry there are no entries to display at this time.</p>
   {{ else }}
 
-    {{ if count == "1" }}
+    {{ if first }}
     <ol>
     {{ endif }}
       <li>
@@ -43,7 +43,7 @@
           
         </article>
       </li>
-    {{ if count == total_results }}
+    {{ if last }}
     </ol>
     {{ endif }}
 
