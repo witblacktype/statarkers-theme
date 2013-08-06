@@ -53,12 +53,11 @@
 {{# Add simple pagination: limit must equal entries limit #}}
 
 {{ entries:pagination
-    folder="{fold}"
-    limit="{lim}"
-    taxonomy="{tax}"
-  }}
-  {{# THIS SHOULD USE LIM VARIABLE BUT DOESN'T WORK - FIX COMING 1.5 #}}
-  {{ if total_items > "5" }}
+  folder="{fold}"
+  limit="{lim}"
+  taxonomy="{tax}"
+}}
+  {{ if total_pages > 1 }}
   <div class="pagination">
     {{ if previous_page }}
       <a href="{{ previous_page }}" class="prev">&larr; Previous Page</a>
@@ -67,10 +66,9 @@
       <a href="{{ next_page }}" class="next">Next Page &rarr;</a>
     {{ endif }}
   </div><!-- END .pagination -->
+  <div class="pageNumber">Page {{ current_page }} of {{ total_pages }}</div>
   {{ endif }}
 {{ /entries:pagination }}
-
-{{ if get:page > 0 }}<div class="pageNumer">Page {{ get:page }}</div>{{ endif }}</div>
 
 {{# 
 ====================================
