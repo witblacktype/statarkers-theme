@@ -9,21 +9,21 @@
 // greyscale
 
 $black: rgb(0, 0, 0);
-$darkgrey: lighten($black, 25%);
+$darkGrey: lighten($black, 25%);
 $grey: lighten($black, 50%);
-$lightgrey: lighten($black, 75%);
-$lightergrey: lighten($black, 90%);
+$lightGrey: lighten($black, 75%);
+$lighterGrey: lighten($black, 90%);
 $white: rgb(255, 255, 255);
 
 // site colours
 
-$maincolor: rgb(45, 53, 56);
-$compcolor: rgb(88, 236, 118);
+$mainColor: rgb(45, 53, 56);
+$compColor: rgb(88, 236, 118);
 
 // links
 
 $normal: $black;
-$hover: $compcolor;
-$active: $compcolor;
+$hover: $compColor;
+$active: $compColor;
 $visited: $black;
-$focus: $compcolor;
+$focus: $compColor;
