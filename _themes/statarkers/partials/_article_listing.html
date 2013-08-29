@@ -60,13 +60,17 @@
   {{ if total_pages > 1 }}
   <div class="pagination">
     {{ if previous_page }}
-      <a href="{{ previous_page }}" class="prev">&larr; Previous Page</a>
+      <a href="{{ previous_page }}" class="prev">&larr; Prev</a>
+    {{ endif }}
+    {{ if previous_page }}
+    <span class="pageNumber withPrev">Page {{ current_page }} of {{ total_pages }}</span>
+    {{ else }}
+    <span class="pageNumber">Page {{ current_page }} of {{ total_pages }}</span>
     {{ endif }}
     {{ if next_page }}
-      <a href="{{ next_page }}" class="next">Next Page &rarr;</a>
+      <a href="{{ next_page }}" class="next">Next &rarr;</a>
     {{ endif }}
   </div><!-- END .pagination -->
-  <div class="pageNumber">Page {{ current_page }} of {{ total_pages }}</div>
   {{ endif }}
 {{ /entries:pagination }}
 
