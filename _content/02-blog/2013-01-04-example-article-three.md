@@ -1,12 +1,15 @@
 ---
+main_img: ""
 title: Example Article Three
+meta_title: "SEO Title Used By Google"
+meta_desc: "This is the page description which displays in Google's search results, it is important for SEO."
+alt_title: ""
+author: garethredfern
 categories:
   - Cooking
 tags:
   - Cakes
-summary: This summary content will display on the listing page. It should give a brief description about the article so that readers can get a quick overview.
-meta_title: SEO Title Used By Google
-meta_desc: "This is the page description which displays in google's search results, it is important for SEO."
+summary: "This summary content will display on the listing page. It should give a brief description about the article so that readers can get a quick overview."
 ---
 <p>Cupcake icing toffee cookie lemon drops. Muffin danish candy ice cream bear claw caramels. Halvah dragée croissant liquorice. Jujubes powder sweet brownie jelly-o caramels pie chocolate bar. Icing jujubes bonbon. Brownie halvah dragée fruitcake chocolate bar. Pie liquorice cake lemon drops cotton candy powder. Sweet roll bonbon brownie. Jelly-o fruitcake marshmallow carrot cake lemon drops chupa chups oat cake tiramisu biscuit. Halvah toffee wypas croissant chupa chups jujubes chocolate. Marzipan wafer wafer tiramisu sugar plum icing. Donut tart dragée cheesecake oat cake.</p>
 
