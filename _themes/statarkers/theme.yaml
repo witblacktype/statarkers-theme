@@ -22,3 +22,7 @@ no_results_text: "Sorry, no results found."
 
 # Site Description
 site_desc: "Enter a description which will display in your home page meta description and RSS feed."
+
+# Contact Details
+contact_name: Gareth Redfern
+contact_email: gareth@garethredfern.com

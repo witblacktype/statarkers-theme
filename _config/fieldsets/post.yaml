@@ -6,6 +6,10 @@ fields:
     default: Article Title
     instructions: "Enter the main article title here."
 
+  author:
+    display: Author
+    type: users
+  
   status:
     display: Status
     type: status
