@@ -1,6 +1,11 @@
 <section role="main">
   <h2>The Page You Are Looking For Is Missing</h2>
   {{ content }}
+  <ul>
+    {{ nav from="/" max_depth="2" }}
+    <li><a href="{{ url }}">{{ title }}</a></li>
+    {{ /nav }}
+  </ul>
 </section><!-- END role="main" -->
 
 {{# 
