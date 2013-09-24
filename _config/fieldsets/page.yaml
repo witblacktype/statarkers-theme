@@ -6,13 +6,18 @@ fields:
     default: Page Title
     instructions: "Enter the main page title here."
 
+  main_section:
+    type: section
+    display: Main Content
+    instructions: "Enter your main page content here."
+
   _template:
     type: hidden
     default: page
 
   content:
     display: Page Main Content
-    type: redactor
+    type: markitup
     image_dir: assets/img/page  #make sure the folder exists and is writeable
     instructions: "Add the main page content here."
     
