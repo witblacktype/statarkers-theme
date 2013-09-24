@@ -21,15 +21,25 @@ fields:
 
   categories:
     display: Categories
-    type: tags
-    instructions: "Add categories."
+    type: suggest
+    create: true
+    max_items: 3
+    multiple: true
+    instructions: "Create or select an existing category (maximum 3)."
+    taxonomy:
+      folder: articles
+      type: categories
     
-  tags:                        # the template tag name -- in this example, {{ tags }}
-    display: Tags              # the control panel field label (optional)
-    required: false            # required: true/false for validation (optional, false by default)
-    default:                   # default value (optional)
-    type: tags                 # fieldtype (optional, text by default)
-    instructions: Add tags.    # instructions added above the field
+  tags:                       
+    display: Tags          
+    type: suggest
+    create: true
+    max_items: 3
+    multiple: true
+    instructions: "Create or select an existing tag (maximum 3)."
+    taxonomy:
+      folder: articles
+      type: tags
 
   main_img:
     display: Article Main Image
