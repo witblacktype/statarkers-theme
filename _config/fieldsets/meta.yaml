@@ -17,9 +17,5 @@ fields:
     display: Alternative Title
     type: text
     instructions: "This will display as the first heading on the page, and can be more descriptive than the main title."
-  main_section:
-    type: section
-    display: Main Content
-    instructions: "Enter your main page content here."
 
 # These are the meta fields which enable you to add a meta title and description used by search engines.
