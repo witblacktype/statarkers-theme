@@ -9,7 +9,7 @@ fields:
   main_section:
     type: section
     display: Main Content
-    instructions: "Enter your main page content here."
+    instructions: "Enter your main article content here."
 
   author:
     display: Author
