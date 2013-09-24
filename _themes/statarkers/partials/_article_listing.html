@@ -19,15 +19,15 @@
           {{ endif }}
           
           {{ if categories_list && tags_list }}
-          <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
+          <p>Category: {{ categories_url_list }} | Tagged: {{ tags_url_list }}</p>
           {{ endif }}
 
           {{ if categories_list && !tags_list }}
-          <p>Filed under: {{ categories_url_list }}</p>
+          <p>Category: {{ categories_url_list }}</p>
           {{ endif }}
 
           {{ if !categories_list && tags_list }}
-          <p>Tagged with: {{ tags_url_list }}</p>
+          <p>Tagged: {{ tags_url_list }}</p>
           {{ endif }}
 
           {{ if main_img|not_empty }}
