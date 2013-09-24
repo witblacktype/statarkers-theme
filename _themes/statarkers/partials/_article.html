@@ -11,15 +11,15 @@
     {{ endif }}
 
     {{ if categories_list && tags_list }}
-    <p>Filed under: {{ categories_url_list }} and tagged with: {{ tags_url_list }}</p>
+    <p>Category: {{ categories_url_list }} | Tagged: {{ tags_url_list }}</p>
     {{ endif }}
 
     {{ if categories_list && !tags_list }}
-    <p>Filed under: {{ categories_url_list }}</p>
+    <p>Category: {{ categories_url_list }}</p>
     {{ endif }}
 
     {{ if !categories_list && tags_list }}
-    <p>Tagged with: {{ tags_url_list }}</p>
+    <p>Tagged: {{ tags_url_list }}</p>
     {{ endif }}
   </header>
 
@@ -65,4 +65,4 @@ There is a comments section which uses Disqus, to make this work you will need t
 
 The images are using the transform tag which caches images, for this to work you need to set up a cache folder in your assets/img directory with the writeable permissions. You then need to set this as your default location in your settings file: _transform_destination: assets/img/cache/
 
- #}}
+#}}
