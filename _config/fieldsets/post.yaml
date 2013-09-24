@@ -6,6 +6,11 @@ fields:
     default: Article Title
     instructions: "Enter the main article title here."
 
+  main_section:
+    type: section
+    display: Main Content
+    instructions: "Enter your main page content here."
+
   author:
     display: Author
     type: users
@@ -40,6 +45,6 @@ fields:
     
   content:
     display: Article Main Content
-    type: redactor
+    type: markitup
     image_dir: assets/img/blog  #make sure the folder exists and is writeable
     instructions: "Add the main article content here."
