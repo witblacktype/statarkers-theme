@@ -2,8 +2,18 @@
   <h2>The Page You Are Looking For Is Missing</h2>
   {{ content }}
   <ul>
+    <li><a href="{{ homepage }}">Home</a></li>
     {{ nav from="/" max_depth="2" }}
-    <li><a href="{{ url }}">{{ title }}</a></li>
+    <li>
+      <a href="{{ url }}">{{ title }}</a>
+      {{ if children }}
+      <ul>
+        {{ children }}
+        <li><a href="{{ url }}">{{ title }}</a></li>
+        {{ /children }}
+      </ul>
+      {{ endif }}
+    </li>
     {{ /nav }}
   </ul>
 </section><!-- END role="main" -->
