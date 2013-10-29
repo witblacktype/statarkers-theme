@@ -6,8 +6,14 @@
     <h2>{{ title }}</h2>
     {{ endif }}
     
-    {{ if date }}
-    <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time>
+    {{ if author:not_empty }}
+    {{ member:profile member="{author}" }}
+    <p>Posted by: {{ first_name }} {{ last_name }}</p>
+    {{ /member:profile }}
+    {{ endif }}
+    
+    {{ if date|not_empty }}
+    <p>Posted on: <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
     {{ endif }}
 
     {{ if categories_list && tags_list }}
