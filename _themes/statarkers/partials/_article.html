@@ -6,7 +6,7 @@
     <h2>{{ title }}</h2>
     {{ endif }}
     
-    {{ if author:not_empty }}
+    {{ if author|not_empty }}
     {{ member:profile member="{author}" }}
     <p>Posted by: {{ first_name }} {{ last_name }}</p>
     {{ /member:profile }}
