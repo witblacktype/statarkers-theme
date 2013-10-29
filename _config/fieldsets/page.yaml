@@ -19,6 +19,7 @@ fields:
     display: Page Main Content
     type: markitup
     image_dir: assets/img/page  #make sure the folder exists and is writeable
-    instructions: "Add the main page content here."
+    instructions:
+      below: "Add the main page content here."
     
 # This is the standard page fieldset it pulls in the meta fields and sets the template to always use the page template.
