@@ -25,7 +25,8 @@ fields:
     create: true
     max_items: 3
     multiple: true
-    instructions: "Create or select an existing category (maximum 3)."
+    instructions:
+      below: "Create or select an existing category (maximum 3)."
     taxonomy:
       folder: articles
       type: categories
@@ -36,7 +37,8 @@ fields:
     create: true
     max_items: 3
     multiple: true
-    instructions: "Create or select an existing tag (maximum 3)."
+    instructions:
+      below: "Create or select an existing tag (maximum 3)."
     taxonomy:
       folder: articles
       type: tags
@@ -45,16 +47,19 @@ fields:
     display: Article Main Image
     type: file
     destination: assets/img/blog  #make sure the folder exists and is writeable
-    instructions: "Add the main image for the article here, this will also display as a thumbnail on the article listing page."
+    instructions:
+      below: "Add the main image for the article here, this will also display as a thumbnail on the article listing page."
         
   summary:
     display: Summary
     required: true
     type: textarea
-    instructions: "Add a short summary for the article here."
+    instructions:
+      below: "Add a short summary for the article here."
     
   content:
     display: Article Main Content
     type: markitup
     image_dir: assets/img/blog  #make sure the folder exists and is writeable
-    instructions: "Add the main article content here."
+    instructions:
+      below: "Add the main article content here."
