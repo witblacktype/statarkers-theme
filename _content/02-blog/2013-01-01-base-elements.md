@@ -6,9 +6,9 @@ meta_desc: "This is the page description which displays in Google's search resul
 alt_title: ""
 author: garethredfern
 categories:
-  - Base
+  - base
 tags:
-  - HTML Content
+  - html content
 summary: "This is the kitchen sink, all the common html elements laid out for you to add styling, really helpful to make sure you don't miss any styles."
 ---
 # Heading Level 1
