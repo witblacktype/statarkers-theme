@@ -3,7 +3,6 @@ hide: true
 
 fields:
   title:
-    default: Article Title
     instructions: "Enter the main article title here."
 
   main_section:
