@@ -11,15 +11,15 @@
       <atom:link href="{{ _site_url }}/feed" rel="self" type="application/rss+xml" />
 
       {{ entries:listing folder="{blog_name}" limit="20" }}
-         <item>
-         <title><![CDATA[{{ title }}]]></title>
-         <author>{{ member:profile member="{author}" }}{{ email}} ({{ first_name }} {{ last_name }}){{ /member:profile }}</author>
-         <link>{{ permalink }}</link>
-         <guid>{{ permalink }}</guid>
-         <category>article</category>
-         <pubDate>{{ datestamp format="r" }}</pubDate>
-         <description><![CDATA[{{ content }}]]></description>
-         </item>
+      <item>
+      <title><![CDATA[{{ title }}]]></title>
+      <author>{{ member:profile member="{author}" }}{{ email}} ({{ first_name }} {{ last_name }}){{ /member:profile }}</author>
+      <link>{{ permalink }}</link>
+      <guid>{{ permalink }}</guid>
+      <category>article</category>
+      <pubDate>{{ datestamp format="r" }}</pubDate>
+      <description><![CDATA[{{ content }}]]></description>
+      </item>
       {{ /entries:listing }}
    </channel>
 </rss>
