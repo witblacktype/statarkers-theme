@@ -1,4 +1,4 @@
-hide: yes
+hide: true
 include: meta                  # include the meta fields
 
 fields:
