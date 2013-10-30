@@ -3,7 +3,6 @@ include: meta                  # include the meta fields
 
 fields:
   title:
-    default: Page Title
     instructions: "Enter the main page title here."
     
   content:
