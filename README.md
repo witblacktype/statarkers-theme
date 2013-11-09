@@ -28,4 +28,4 @@ To install the theme follow the instructions below.
 
 ##More Information
 
-You can visit [Statamic Themes](http://www.statamicthemes.com/themes) for more theme information and a demo is also availble [here](http://statarkers.statamicthemes.com). There is also a video which takes you through how to install the theme [here](http://www.statamicthemes.com/articles/installing-the-statarkers-statamic-theme).
+You can visit [Statamic Themes](http://www.statamicthemes.com/themes) for more theme information and a demo is also availble [here](http://statarkers.statamicthemes.com). There is also a video which takes you through how to install the theme [here](http://www.statamicthemes.com/articles/part-1-installing-the-statarkers-statamic-theme).
