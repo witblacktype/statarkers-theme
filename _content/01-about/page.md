@@ -1,7 +1,10 @@
 ---
-title: About Statarkers
-_template: page
 _fieldset: page
+title: About Statarkers
+meta_title: ""
+meta_desc: ""
+alt_title: ""
+_template: page
 ---
 <p>Born from the idea of a blank canvas for starting your Statamic sites, this theme is loosely based on the popular [Starkers](http://viewportindustries.com/products/starkers/) theme for Wordpress. The idea being that you load this theme into your Statamic themes folder, add the dummy content, get designing and building your Statamic sites in even less time than you were already.</p>
 
