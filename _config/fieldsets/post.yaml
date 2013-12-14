@@ -27,7 +27,7 @@ fields:
     instructions:
       below: "Create or select an existing category (maximum 3)."
     taxonomy:
-      folder: articles
+      folder: articles #make sure you rename this to the folder name of your blog
       type: categories
     
   tags:                       
@@ -39,13 +39,13 @@ fields:
     instructions:
       below: "Create or select an existing tag (maximum 3)."
     taxonomy:
-      folder: articles
+      folder: articles #make sure you rename this to the folder name of your blog
       type: tags
 
   main_img:
     display: Article Main Image
     type: file
-    destination: assets/img/blog  #make sure the folder exists and is writeable
+    destination: assets/img/blog  #make sure the folder exists and is writable
     instructions:
       below: "Add the main image for the article here, this will also display as a thumbnail on the article listing page."
         
@@ -59,6 +59,6 @@ fields:
   content:
     display: Article Main Content
     type: markitup
-    image_dir: assets/img/blog  #make sure the folder exists and is writeable
+    image_dir: assets/img/blog  #make sure the folder exists and is writable
     instructions:
       below: "Add the main article content here."
