@@ -6,13 +6,23 @@
     <priority>0.8</priority>
   </url>
 {{ /entries:listing }}
-{{ nav from="/" }}
+{{ nav from="/" max_depth="3" exclude="404" }}
   <url>
     <loc>{{ _site_url }}{{ url }}</loc>
     <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  {{ if children }}
+  {{ children }}
+  <url>
+    <loc>{{ _site_url }}{{ url }}</loc>
+    <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {{ /children }}
+  {{ endif }}
 {{ /nav }}
 
 {{# 
