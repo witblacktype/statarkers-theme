@@ -12,7 +12,7 @@
     {{ /member:profile }}
     {{ endif }}
     
-    {{ if date|not_empty }}
+    {{ if date }}
     <p>Posted on: <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
     {{ endif }}
 
