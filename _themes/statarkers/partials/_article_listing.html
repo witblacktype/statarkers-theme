@@ -66,15 +66,13 @@
   {{ if total_pages > 1 }}
   <div class="pagination">
     {{ if previous_page }}
-      <a href="{{ previous_page }}" class="prev">&larr; Prev</a>
+      <a href="{{ previous_page }}" class="pagination__prev">&larr; Prev</a>
     {{ endif }}
-    {{ if previous_page }}
-    <span class="pageNumber withPrev">Page {{ current_page }} of {{ total_pages }}</span>
-    {{ else }}
-    <span class="pageNumber">Page {{ current_page }} of {{ total_pages }}</span>
-    {{ endif }}
+
+    <span class="pagination__number">Page {{ current_page }} of {{ total_pages }}</span>
+    
     {{ if next_page }}
-      <a href="{{ next_page }}" class="next">Next &rarr;</a>
+      <a href="{{ next_page }}" class="pagination__next">Next &rarr;</a>
     {{ endif }}
   </div><!-- END .pagination -->
   {{ endif }}
