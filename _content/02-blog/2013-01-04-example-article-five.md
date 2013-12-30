@@ -1,6 +1,6 @@
 ---
 main_img: ""
-title: Example Article Five
+title: Example Article Three
 meta_title: "SEO Title Used By Google"
 meta_desc: "This is the page description which displays in Google's search results, it is important for SEO."
 alt_title: ""
