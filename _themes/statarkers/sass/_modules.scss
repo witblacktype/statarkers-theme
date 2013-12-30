@@ -9,17 +9,4 @@
 // Modules can sometimes sit within other Modules, too.
 // Each Module should be designed to exist as a standalone component.
 
-.pagination {
-  margin: 1em 0;
-  padding: 1em 0;
-  @include pie-clearfix;
-  a.prev { float: left; }
-  a.next { float: right; }
-}
-.pageNumber {
-  width: 90%;
-  color: $grey;
-  text-align: left;
-  display: inline-block;
-  &.withPrev { text-align: center; }
-}
+.pagination { text-align: center; }
