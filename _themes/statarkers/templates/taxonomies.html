@@ -1,9 +1,9 @@
 <section role="main">
   {{ if segment_2 == "categories" }}
-  <h2>Category &ndash; {{ taxonomy_slug|deslugify|title }}</h2>
+  <h2>Category &ndash; {{ taxonomy_slug|deslugify|title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
   {{ endif }}
   {{ if segment_2 == "tags" }}
-  <h2>Tag &ndash; {{ taxonomy_slug|deslugify|title }}</h2>
+  <h2>Tag &ndash; {{ taxonomy_slug|deslugify|title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
   {{ endif }}
 
   {{ theme:partial src="_article_listing" fold={blog_name} lim="5" tax="yes" }}
