@@ -1,0 +1,152 @@
+/* =========================================
+STATAMIC.CSS
+============================================
+
+author: Gareth Redfern
+version: 1.0
+These are some base styles, feel free to delete them or add to them as you see fit.
+================================================================================== */
+
+/* =========================================
+BASE STYLES
+========================================= */
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  /* See http://css-tricks.com/box-sizing */
+}
+html  {
+  font-size: 100%;
+  background-color: #eee;
+}
+body {
+  color: #323232;
+  line-height: 1.5;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: normal;
+  font-family: sans-serif;
+  background-color: #FFF;
+}
+
+h1 { font-size: 2.9em; line-height: 1.1; letter-spacing: 0.02em; }
+h2 { font-size: 1.7em; line-height: 1.1; letter-spacing: 0.02em; }
+h3 { font-size: 1.3em; line-height: 1.1; }
+h4,h5,h6 { font-size: 0.875em; }
+
+h1,h2,h3,h4,h5,h6 {
+  color: #323232;
+  font-weight: bold;
+  font-style: normal;
+  font-family: sans-serif;
+}
+h1 { margin-top: 0; }
+h2 { margin-bottom: 0.5em; }
+h3,h4,h5,h6 { margin-bottom: 0.1em; }
+
+h3 + p, h4 + p, h5 + p, h6 + p { margin-top: 0; }
+
+h3 + ul, h4 + ul, h5 + ul, h6 + ul,
+h3 + ol, h4 + ol, h5 + ol, h6 + ol { margin-top: 0; }
+
+a { text-decoration: underline; }
+strong, b {
+  font-weight: bold;
+  font-style: normal;
+  font-family: sans-serif;
+}
+em, i {
+  font-style: italic;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+code { background-color: #eee; font-size: 0.875em; }
+pre code { background-color: transparent; }
+img { max-width: 100%; height: auto; }
+
+blockquote {
+  color: #323232;
+  margin-left: 0;
+  font-size: 1.3em;
+  padding-left: 1em;
+  border-left: 0.3em solid #eee;
+}
+ul,ol { padding-left: 0; }
+dt { font-weight: bold; }
+dd { margin-bottom: 1em; }
+
+// Forms
+.form {
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  border: 0.1em solid #eee;
+
+  label { cursor: pointer; }
+  input[type],
+  textarea { padding: 0.3em; }
+
+  input {
+    padding: 0.3em;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0; 
+    border-radius: 0;
+  }
+}
+
+
+// Tables
+.table {
+  width: 100%;
+  background-color: #fff;
+  border: 0.1em solid #ddd;
+
+  caption { font-weight: bold; }
+  thead {
+    text-align: left;
+    text-align: center;
+    background-color: #eee;
+
+    th { border-color: #eee; }
+  }
+  th,td { padding: 0.5em; border: 0.1em solid #ddd; }
+  td { text-align: left; }
+
+  th[scope="row"] { font-weight: normal; }
+  th[scope="rowgroup"] { vertical-align: middle; }
+  th[scope="row"],
+  th[scope="rowgroup"] { text-align: left; }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #eee;
+  }
+  tfoot {
+    font-size: 75%;
+    background-color: #eee;
+
+    td { text-align: center; }
+  }
+}
+
+/* =========================================
+LAYOUT STYLES
+========================================= */
+
+.container {
+  margin: 0 auto;
+  max-width: 42em;
+  padding: 0 1.5em;
+}
+header[role="banner"] {
+  padding: 1.5em 0;
+  background-color: #323232;
+  border-bottom: 0.1em solid #000;
+}
+footer[role="contentinfo"] {
+  padding: 1.5em;
+  margin-top: 1.5em;
+  background-color: #323232;
+  border-top: 0.1em solid #000;
+}
