@@ -14,33 +14,7 @@
         <article class="article">
           <h3><a href="{{ url }}">{{ title }}</a></h3>
           
-          {{ if author || date || categories_list || tags_list}}
-          <div class="article__meta">
-          
-            {{ if author|not_empty }}
-            {{ member:profile member="{author}" }}
-            <p class="article__author">Posted by: {{ first_name }} {{ last_name }}</p>
-            {{ /member:profile }}
-            {{ endif }}
-
-            {{ if date }}
-            <p class="article__date">Posted on: <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
-            {{ endif }}
-            
-            {{ if categories_list && tags_list }}
-            <p class="article__tax">Category: {{ categories_url_list }} | Tagged: {{ tags_url_list }}</p>
-            {{ endif }}
-
-            {{ if categories_list && !tags_list }}
-            <p class="article__tax">Category: {{ categories_url_list }}</p>
-            {{ endif }}
-
-            {{ if !categories_list && tags_list }}
-            <p class="article__tax">Tagged: {{ tags_url_list }}</p>
-            {{ endif }}
-
-          </div><!-- END .article__meta -->
-          {{ endif }}
+          {{ theme:partial src="_article_meta" }}
 
           {{ if main_img|not_empty }}
           <img src="{{ transform
