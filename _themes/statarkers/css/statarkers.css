@@ -180,6 +180,8 @@ MODULE STYLES
 }
 .footer small { display: block; text-align: center; }
 .pagination { text-align: center; }
+.lead a,
+.main-content a { text-decoration: underline; }
 
 /* =========================================
 STATE STYLES
