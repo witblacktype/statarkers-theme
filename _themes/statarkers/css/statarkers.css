@@ -5,6 +5,10 @@ STATAMIC.CSS
 author: Gareth Redfern
 version: 1.0
 These are some base styles, feel free to delete them or add to them as you see fit.
+
+SITE COLORS
+===========
+main color: rgb(46, 204, 113)
 ================================================================================== */
 
 /* =========================================
@@ -19,16 +23,16 @@ BASE STYLES
 }
 html  {
   font-size: 100%;
-  background-color: #eee;
+  background-color: rgb(50, 50, 50);
 }
 body {
-  color: #323232;
+  color: rgb(50, 50, 50);
   line-height: 1.5;
   font-size: 0.875em;
   font-style: normal;
   font-weight: normal;
   font-family: sans-serif;
-  background-color: #FFF;
+  background-color: rgb(255,255,255);
 }
 
 h1 { font-size: 2.9em; line-height: 1.1; letter-spacing: 0.02em; }
@@ -37,7 +41,7 @@ h3 { font-size: 1.3em; line-height: 1.1; }
 h4,h5,h6 { font-size: 0.875em; }
 
 h1,h2,h3,h4,h5,h6 {
-  color: #323232;
+  color: rgb(50, 50, 50);
   font-weight: bold;
   font-style: normal;
   font-family: sans-serif;
@@ -62,27 +66,31 @@ em, i {
   font-weight: normal;
   font-family: sans-serif;
 }
-code { background-color: #eee; font-size: 0.875em; }
+code { background-color: rgb(238, 238, 238); font-size: 0.875em; }
 pre code { background-color: transparent; }
 img { max-width: 100%; height: auto; }
 
 blockquote {
-  color: #323232;
+  color: rgb(50, 50, 50);
   margin-left: 0;
   font-size: 1.3em;
   padding-left: 1em;
-  border-left: 0.3em solid #eee;
+  border-left: 0.3em solid rgb(238, 238, 238);
 }
 ul,ol { padding-left: 0; }
 dt { font-weight: bold; }
 dd { margin-bottom: 1em; }
+.lead { font-size: 1.2em; }
+.text-left {text-align: left; }
+.text-center { text-align: center;}
+.text-right { text-align: right; }
 
-// Forms
+/* Forms */
 .form {
   width: 100%;
   padding: 1em;
-  background-color: #fff;
-  border: 0.1em solid #eee;
+  background-color: rgb(255,255,255);
+  border: 0.1em solid rgb(238, 238, 238);
 
   label { cursor: pointer; }
   input[type],
@@ -97,19 +105,19 @@ dd { margin-bottom: 1em; }
 }
 
 
-// Tables
+/* Tables */
 .table {
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255,255,255);
   border: 0.1em solid #ddd;
 
   caption { font-weight: bold; }
   thead {
     text-align: left;
     text-align: center;
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
 
-    th { border-color: #eee; }
+    th { border-color: rgb(238, 238, 238); }
   }
   th,td { padding: 0.5em; border: 0.1em solid #ddd; }
   td { text-align: left; }
@@ -120,11 +128,11 @@ dd { margin-bottom: 1em; }
   th[scope="rowgroup"] { text-align: left; }
 
   tbody tr:nth-of-type(even) {
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
   }
   tfoot {
     font-size: 75%;
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
 
     td { text-align: center; }
   }
@@ -139,14 +147,59 @@ LAYOUT STYLES
   max-width: 42em;
   padding: 0 1.5em;
 }
-header[role="banner"] {
+.header {
   padding: 1.5em 0;
-  background-color: #323232;
-  border-bottom: 0.1em solid #000;
+  background-color: rgb(50, 50, 50);
+  border-bottom: 0.1em solid rgb(0,0,0);
 }
-footer[role="contentinfo"] {
+.footer {
   padding: 1.5em;
   margin-top: 1.5em;
-  background-color: #323232;
-  border-top: 0.1em solid #000;
+  background-color: rgb(50, 50, 50);
+  border-top: 0.1em solid rgb(0,0,0);
+}
+
+/* =========================================
+MODULE STYLES
+========================================= */
+.list-unstyled { padding-left: 0; list-style: none; }
+
+.nav { text-transform: uppercase; }
+.nav ul { text-align: center; margin-top: 1.8em; }
+.nav li { display: inline-block; margin-right: 1em; }
+.nav li:last-child { margin-right: 0; }
+.header, .footer { color: rgb(255,255,255); }
+.header a, .footer a { text-decoration: none; }
+.logo,
+.strap-line { text-align: center; margin: 0; }
+.logo { font-size: 2.2em; }
+.strap-line {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: rgb(153, 153, 153);
+}
+.footer small { display: block; text-align: center; }
+.pagination { text-align: center; }
+
+/* =========================================
+STATE STYLES
+========================================= */
+
+.header a, .header a:visited { color: rgb(255,255,255); }
+.footer a, .footer a:visited { color: rgb(255,255,255); }
+
+/* MUMMY BEAR - MEDIUM SIZE SCREENS
+============================================================== */
+@media screen and (min-width: 33em) {
+
+  body { font-size: 1em; }
+
+}
+
+/* DADDY BEAR - LARGE SCREENS
+============================================================== */
+@media screen and (min-width: 62em;) {
+
+
+
 }
