@@ -1,6 +1,6 @@
 ---
 _fieldset: page
-title: About Statarkers
+title: About
 meta_title: ""
 meta_desc: ""
 alt_title: ""
