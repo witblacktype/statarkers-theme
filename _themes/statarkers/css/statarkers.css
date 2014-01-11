@@ -182,6 +182,7 @@ MODULE STYLES
 .pagination { text-align: center; }
 .lead a,
 .main-content a { text-decoration: underline; }
+.article__heading { margin-bottom: 0; }
 
 /* =========================================
 STATE STYLES
