@@ -91,52 +91,46 @@ dd { margin-bottom: 1em; }
   padding: 1em;
   background-color: rgb(255,255,255);
   border: 0.1em solid rgb(238, 238, 238);
-
-  label { cursor: pointer; }
-  input[type],
-  textarea { padding: 0.3em; }
-
-  input {
-    padding: 0.3em;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0; 
-    border-radius: 0;
-  }
 }
-
+.form label { cursor: pointer; }
+.form input[type],
+.form textarea { padding: 0.3em; }
+.form input {
+  padding: 0.3em;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0; 
+  border-radius: 0;
+}
 
 /* Tables */
 .table {
   width: 100%;
   background-color: rgb(255,255,255);
   border: 0.1em solid #ddd;
+}
+.table  caption { font-weight: bold; }
+.table thead {
+  text-align: left;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+}
+.table thead th { border-color: rgb(238, 238, 238); }
+.table th, .table td { padding: 0.5em; border: 0.1em solid #ddd; }
+.table td { text-align: left; }
 
-  caption { font-weight: bold; }
-  thead {
-    text-align: left;
-    text-align: center;
+.table th[scope="row"] { font-weight: normal; }
+.table th[scope="rowgroup"] { vertical-align: middle; }
+.table th[scope="row"],
+.table th[scope="rowgroup"] { text-align: left; }
+
+.table tbody tr:nth-of-type(even) {
     background-color: rgb(238, 238, 238);
-
-    th { border-color: rgb(238, 238, 238); }
   }
-  th,td { padding: 0.5em; border: 0.1em solid #ddd; }
-  td { text-align: left; }
-
-  th[scope="row"] { font-weight: normal; }
-  th[scope="rowgroup"] { vertical-align: middle; }
-  th[scope="row"],
-  th[scope="rowgroup"] { text-align: left; }
-
-  tbody tr:nth-of-type(even) {
-    background-color: rgb(238, 238, 238);
-  }
-  tfoot {
+.table tfoot {
     font-size: 75%;
     background-color: rgb(238, 238, 238);
-
-    td { text-align: center; }
   }
-}
+.table tfoot td { text-align: center; }
 
 /* =========================================
 LAYOUT STYLES
@@ -183,6 +177,7 @@ MODULE STYLES
 .lead a,
 .main-content a { text-decoration: underline; }
 .article__heading { margin-bottom: 0; }
+.article__date { margin-top: 0; color: rgb(153, 153, 153); }
 
 /* =========================================
 STATE STYLES
