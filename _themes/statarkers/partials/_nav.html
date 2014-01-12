@@ -1,13 +1,13 @@
 <nav role="navigation" class="nav">
-  <ul>
-    <li><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }}>Home</a></li>
+  <ul class="nav__list">
+    <li class="nav__listItem"><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }}>Home</a></li>
     {{ nav from="/" max_depth="2" }}
-    <li>
+    <li class="nav__listItem">
       <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ endif }}>{{ title }}</a>
       {{ if children }}
-      <ul>
+      <ul class="nav__list">
         {{ children }}
-        <li><a href="{{ url }}"{{ if is_current }} class="current"{{ endif }}>{{ title }}</a></li>
+        <li class="nav__listItem"><a href="{{ url }}"{{ if is_current }} class="current"{{ endif }}>{{ title }}</a></li>
         {{ /children }}
       </ul>
       {{ endif }}
