@@ -1,7 +1,7 @@
 ---
 main_img: ""
 title: Base Elements For Styling
-meta_title: "SEO Title Used By Google"
+meta_title: SEO Title Used By Google
 meta_desc: "This is the page description which displays in Google's search results, it is important for SEO."
 alt_title: ""
 author: garethredfern
@@ -10,6 +10,8 @@ categories:
 tags:
   - html content
 summary: "This is the kitchen sink, all the common html elements laid out for you to add styling, really helpful to make sure you don't miss any styles."
+featured: not_featured
+video: ""
 ---
 # Heading Level 1
 ## Heading Level 2

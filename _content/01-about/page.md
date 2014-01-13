@@ -1,9 +1,9 @@
 ---
 _fieldset: page
 title: About
-meta_title: ""
-meta_desc: ""
-alt_title: ""
+meta_title: SEO Title Used By Google
+meta_desc: "This is the page description which displays in Google's search results, it is important for SEO."
+alt_title: About Statarkers Theme
 _template: page
 ---
 Born from the idea of a blank canvas for starting your Statamic sites, this theme is loosely based on the popular [Starkers](http://viewportindustries.com/products/starkers/) theme for Wordpress. The idea being that you load this theme into your Statamic themes folder, add the dummy content, get designing and building your Statamic sites in even less time than you were already.
