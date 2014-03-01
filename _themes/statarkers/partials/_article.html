@@ -1,5 +1,5 @@
-<article class="article article-single">
-  <header>
+<article class="article">
+  <header class="article__header">
     {{ if alt_title }}
     <h2 class="article__heading">{{ alt_title }}</h2>
     {{ else }}
@@ -44,15 +44,15 @@
   }}" alt="" class="article__img">
   {{ endif }}
 
-  <div class="lead">
+  <div class="article__lead">
   {{ summary|smartypants|markdown }}
   </div><!-- END .lead -->
 
-  <div class="main-content">
+  <div class="article__main">
   {{ content }}
   </div><!-- END .main-content -->
   
-  <footer>
+  <footer class="article__footer">
     <a href="/">&larr; back</a>
   </footer>
 </article>
