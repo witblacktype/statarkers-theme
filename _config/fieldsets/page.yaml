@@ -17,7 +17,6 @@ fields:
   content:
     display: Page Main Content
     type: markitup
-    image_dir: assets/img/page  #make sure the folder exists and is writable
     instructions:
       below: "Add the main page content here."
     
