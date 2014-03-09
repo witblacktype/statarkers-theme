@@ -73,6 +73,5 @@ fields:
   content:
     display: Main Content
     type: markitup
-    image_dir: assets/img/blog  #make sure the folder exists and is writable
     instructions:
       below: "Add the main content here."
