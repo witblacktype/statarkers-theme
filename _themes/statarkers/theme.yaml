@@ -17,6 +17,12 @@ show_comments: no
 # Blog
 blog_name: blog
 
+#Social Links
+facebook: https://www.facebook.com/
+twitter: https://twitter.com/
+linkedIn: https://uk.linkedin.com/
+github: https://github.com/
+
 # Global text snippets
 no_results_text: "Sorry, no results found."
 
