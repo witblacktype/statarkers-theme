@@ -16,7 +16,7 @@
       {{ endif }}
 
       {{ if date }}
-      <p class="article__date">Posted on: <time pubdate datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
+      <p class="article__date">Posted on: <time datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
       {{ endif }}
       
       {{ if categories_list && tags_list }}
