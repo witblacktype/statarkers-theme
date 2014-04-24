@@ -1,4 +1,4 @@
-{{ if enable_analytics == "yes" }}
+{{ if !disable_analytics }}
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -12,6 +12,8 @@
   })();
   
 </script>
+{{ else }}
+<!-- DEV MODE -->
 {{ endif }}
 
 {{#
