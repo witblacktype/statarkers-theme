@@ -7,6 +7,9 @@
 # Theme name
 theme_name: Statarkers
 
+# Site Language
+site_language: "en"
+
 # Theme Strap Line
 strap_line: "a bare-bones statamic theme"
 
