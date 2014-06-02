@@ -4,4 +4,6 @@ _type: xml
 _layout: sitemap
 _template: sitemap
 _fieldset: sitemap
+_admin:
+  hide: true
 ---
