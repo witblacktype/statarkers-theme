@@ -1,29 +1,81 @@
-// ===============================================
-// All variables to be used in your theme go here. 
-// ===============================================
+// =============================================================================
+// All variables to be used in your theme go here.
+// =============================================================================
 
-// ===================
+// =============================================================================
 // COLOURS
-// ===================
+// =============================================================================
 
-// greyscale
+// GREYSCALE ===================================================================
 
-$black: rgb(0, 0, 0);
-$darkGrey: lighten($black, 25%);
-$grey: lighten($black, 50%);
-$lightGrey: lighten($black, 75%);
-$lighterGrey: lighten($black, 90%);
-$white: rgb(255, 255, 255);
+$black        :  rgb(0, 0, 0);
+$darkGrey     :  lighten($black, 25%);
+$grey         :  lighten($black, 50%);
+$lightGrey    :  lighten($black, 75%);
+$lighterGrey  :  lighten($black, 95%);
+$white        :  rgb(255, 255, 255);
 
-// site colours
+// SITE COLOURS ================================================================
 
-$mainColor: rgb(45, 53, 56);
-$compColor: rgb(88, 236, 118);
+$cs-a1             :  rgb(12, 93, 161);
+$cs-a2             :  rgb(243, 183, 58);
 
-// links
+$cs-bodyBg         :  $white;
+$cs-htmlBg         :  $cs-a1;
+$cs-font           :  rgb(107, 107, 107);
+$cs-heading        :  $cs-a1;
+$cs-border         :  rgb(124, 124, 129);
 
-$normal: $black;
-$hover: $compColor;
-$active: $compColor;
-$visited: $black;
-$focus: $compColor;
+$cs-facebook          : rgb(59, 89, 152);
+$cs-twitter           : rgb(0, 172, 237);
+$cs-linkedIn          : rgb(0, 123, 182);
+$cs-ivory             : rgb(255, 255, 250);
+
+// LINKS =======================================================================
+
+$normal       :  $cs-font;
+$hover        :  $cs-heading;
+$active       :  $cs-heading;
+$visited      :  $cs-font;
+$focus        :  $cs-heading;
+
+// NAVIGATION ==================================================================
+
+$mobNavBg         : lighten($cs-htmlBg, 5%);
+$navNormal        : $grey;
+$navHover         : lighten($navNormal, 10%);
+$navActive        : lighten($navNormal, 10%);
+$navVisited       : $navNormal;
+$navFocus         : $navHover;
+
+$navSelectColor   :  darken($grey, 5%);
+
+// TABLES ======================================================================
+
+$tableBg          :  $white;
+$tableBorderColor :  $grey;
+$tableFontColor   :  $cs-font;
+
+// FORMS =======================================================================
+
+$formBg           :  $cs-a1;
+$formBorderColor  :  transparent;
+
+// HEADER & FOOTER BACKGROUNDS =================================================
+
+$headerBg         : $cs-htmlBg;
+$footerBg         : lighten($cs-htmlBg, 5%);
+
+// FONTS =======================================================================
+
+// ADD @fontface
+
+$font-serif          : serif;
+$font-sans           : sans-serif;
+$font-mono           : "Courier New", Courier, monospace;
+$font-sans-heading   : sans-serif;
+$font-serif-heading  : $font-serif;
+
+$headingFontWeight: 700;
+$mainFontWeight   : 300;
+$boldFontWeight   : 700;

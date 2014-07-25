@@ -2,20 +2,115 @@
 // BASE RULES
 // =====================================
 
-
 // A Base rule is applied to an element using an element selector, a descendent selector,
 // or a child selector, along with any pseudo-classes.
 // It doesn't include any class or ID selectors.
 // It is defining the default styling for how that element should look in all occurrences on the page.
 
+// PLACEHOLDERS ================================================================
+
+%no_list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+// DROP THE BASE ===============================================================
+
+html  {
+  font-size: 100%;
+  background-color: $cs-htmlBg;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   line-height: 1.5;
-  color: $darkGrey;
+  color: $cs-font;
+  font-size: em(14);
+  font-style: normal;
+  font-family: $font-sans;
+  background-color: $cs-bodyBg;
+  font-weight: $mainFontWeight;
 }
-small {
-  display: block;
-  text-align: center;
+h1 { font-size: em(36); margin-bottom: 0; }
+h2 { font-size: em(24); margin-bottom: 0.5em; }
+h3 { font-size: em(18); margin-bottom: 0.5em; }
+h4 { font-size: em(16); margin-bottom: 0; }
+h5 { font-size: em(16); margin-bottom: 0; }
+h6 { font-size: em(16); margin-bottom: 0; }
+
+h1,h2,h3,h4,h5,h6 {
+  color: $cs-heading;
+  font-style: normal;
+  font-family: $font-sans-heading;
+  font-weight: $headingFontWeight;
 }
+
+h4,h5,h6 { margin-bottom: 0; }
+h1+ p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p { margin-top: 0; }
 a {
-  @include link-colors($normal, $hover, $active, $visited, $focus);
+  color: $cs-font;
+  text-decoration: none;
+  @include transition(0.3s);
+  &:visited { color: $cs-font; }
+  &:hover, &:active, &:focus { color: $cs-font; text-decoration: underline; }
+}
+strong, b {
+  font-style: normal;
+  font-family: $font-sans;
+  font-weight: $boldFontWeight;
+}
+em, i {
+  font-style: italic;
+  font-family: $font-sans;
+  font-weight: $mainFontWeight;
+}
+code { background-color: $lighterGrey; }
+pre code { background-color: transparent; }
+.screen-reader-text, .ir { @include hide-text; }
+.vh {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+img { max-width: 100%; height: auto; vertical-align: bottom; }
+
+.left { float: left; }
+.right { float: right; }
+
+blockquote {
+  margin-left: 0;
+  font-weight: 300;
+  font-size: 1em;
+  color: $cs-font;
+  font-style: italic;
+}
+dt { font-weight: bold; }
+dd { margin-bottom: 1em; }
+iframe, object { max-width: 100%; }
+.hide, .screen-reader-text {
+  top: -9999px;
+  left: -9999px;
+  position: absolute;
+}
+.text--left { text-align: left; }
+.text--right { text-align: right; }
+.text--center { text-align: center; }
+figure { margin: 0; }
+.lead { font-size: 1.3em; }
+.no-list { @extend %no_list; }
+button { outline: none; }
+textarea { min-height: 10em; }
+mark {
+  color: $black;
+  background-color: rgb(255, 255, 0);
+}
+
+.icon-alone {
+  display: inline-block; // Fix for clickability issue in WebKit
 }

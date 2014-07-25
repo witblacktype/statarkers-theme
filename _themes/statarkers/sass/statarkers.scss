@@ -5,14 +5,10 @@
 // ==========================
 // COMPASS, VARIABLES, MIXINS
 // ==========================
-@import "compass";
 @import "variables";
+@import "../bower_components/bourbon/dist/bourbon";
 @import "mixins";
-
-// =================
-// CSS RESET
-// =================
-@import "normalize";
+@import "mq";
 
 // =================
 // BASE RULES
@@ -27,12 +23,13 @@
 // =================
 // MODULE RULES
 // =================
-@import "modules";
-
-// =================
-// STATE RULES
-// =================
-@import "states";
+@import "modules/modules";
+@import "modules/forms";
+@import "modules/tables";
+@import "modules/site_header";
+@import "modules/navigation";
+@import "modules/site_footer";
+@import "modules/ui";
 
 // =================
 // IE RULES
