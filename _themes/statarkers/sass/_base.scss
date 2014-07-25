@@ -57,12 +57,10 @@ a {
 }
 strong, b {
   font-style: normal;
-  font-family: $font-sans;
   font-weight: $boldFontWeight;
 }
 em, i {
   font-style: italic;
-  font-family: $font-sans;
   font-weight: $mainFontWeight;
 }
 code { background-color: $lighterGrey; }
