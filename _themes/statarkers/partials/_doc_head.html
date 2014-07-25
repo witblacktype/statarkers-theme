@@ -17,14 +17,14 @@
 <!--<![endif]-->
 
 <!-- feeds -->
-<link rel="alternate" type="application/rss+xml" href="{{ _site_url }}/feed" title="{{ _site_name }} RSS Feed">
+<link rel="alternate" type="application/rss+xml" href="{{ _site_url }}feed" title="{{ _site_name }} RSS Feed">
 
 <!-- scripts -->
-<script src="{{ theme:js src="libs/jquery-1.9.1.min" }}"></script>
-<script src="{{ theme:js src="libs/modernizr_dev" }}"></script>
+<script src="{{ theme:asset src="bower_components/jquery/dist/jquery.min.js" }}"></script>
+<script src="{{ theme:asset src="bower_components/modernizr/modernizr.js" }}"></script>
 <!--[if IE 8]>
-<script src="{{ theme:js src='libs/DOMAssistantCompressed-2.8.1' }}"></script>
-<script src="{{ theme:js src='libs/selectivizr-min' }}"></script>
+<script src="{{ theme:js src="libs/DOMAssistantCompressed-2.8.1.js" }}"></script>
+<script src="{{ theme:asset src="bower_components/selectivizr/selectivizr.js" }}"></script>
 <![endif]-->
 
 <!-- analytics -->
