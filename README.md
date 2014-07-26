@@ -28,7 +28,7 @@ To install the theme follow the instructions below.
 2. Copy the statarkers theme folder to your _themes folder. Please note if you have downloaded the statarkers-theme-master folder **the statarkers theme is located inside the _themes folder**.
 3. Rename the Statarkers theme folder to the name of your theme. From now on we will still refer to the Statarkers theme folder but this will now be whatever you rename it to.
 4. Change the name of the statarkers.js file (located in the js folder) and the starkers.js file located in the js/app folder  to the name of your theme.
-5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css file to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.
+5. In the Statarkers theme folder go to the css folder. Rename the statarkers.css and statarkers.css.map files to the name of your theme then find the sass folder and rename the statarkers.scss file to the name of your theme.
 6. In the Statarkers theme folder open the package.json file and change the `"name": "statarkers"` to your theme name.
 7. Delete the contents of your Statamic install fieldsets folder then copy the new fieldsets from the Statarkers folder (located in _config/fieldsets).
 8. If you would like to use the dummy content provided with the Statarkers theme (recommended) then delete the contents of your existing _content folder and copy the files and folders from the Statarkers _content folder. Also delete the img folder inside of your assets folder and drop in the Statarkers img folder.
