@@ -8,10 +8,10 @@
 
 * { @include box-sizing(border-box); }
 
-.container {
+.constrain {
   margin: 0 auto;
   padding: 0 1em;
-  max-width: 40em;
+  max-width: em(980);
 }
 
 @include mq($from: tablet) {
