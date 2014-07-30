@@ -27,17 +27,17 @@
 {{ raven:form formset="contact" attr="class:form|id:form" }}
   <div>
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name" placeholder="Jamie Smith" required>
+    <input type="text" name="name" id="name" value="{{ value:name }}" placeholder="Jamie Smith" required>
   </div>
 
   <div>
     <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+    <input type="email" name="email" id="email" value="{{ value:email }}" placeholder="email@example.com" required>
   </div>
 
   <div>
     <label for="message">Your Message:</label>
-    <textarea name="message" id="message" placeholder="Type your message here&hellip;" required></textarea>
+    <textarea name="message" id="message" placeholder="Type your message here&hellip;" required>{{ value:message }}</textarea>
   </div>
 
   <button type="submit" class="btn right">submit</button>
