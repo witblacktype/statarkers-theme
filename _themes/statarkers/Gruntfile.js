@@ -8,7 +8,7 @@ grunt.initConfig({
     uglify: {
       target: {
         options: {
-          sourcemap: true
+          sourceMap: true
         },
         files: {
           'js/<%= pkg.name %>.js': ['js/app/<%= pkg.name %>.js']
