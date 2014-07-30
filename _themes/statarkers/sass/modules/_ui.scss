@@ -14,3 +14,54 @@
   text-align: center;
   padding-bottom: 1em;;
 }
+
+// BUTTONS
+////////////////////////////////////////////////////////////////////////////////
+.btn {
+  color: $white;
+  text-align: center;
+  padding: 0.3em 1em;
+  border-radius: 0.3em;
+  display: inline-block;
+  background-color: $cs-a1;
+  @include transition(0.2s);
+  border: 0.1em solid darken($cs-a1, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    text-decoration: none;
+    border-color: darken($cs-a1, 10%);
+    background-color: darken($cs-a1, 5%);
+  }
+}
+
+.btn--cta {
+  background-color: $cs-a2;
+  border: 0.1em solid darken($cs-a2, 5%);
+  &:hover, &:active, &:focus {
+    @include transform( scale(1.2) );
+    border-color: darken($cs-a2, 10%);
+    background-color: darken($cs-a2, 5%);
+  }
+}
+
+.btn--facebook {
+  width: 8em;
+  display: block;
+  background-color: $cs-facebook;
+  border: 0.1em solid darken($cs-facebook, 5%);
+  &:hover, &:active, &:focus {
+    border-color: darken($cs-facebook, 10%);
+    background-color: darken($cs-facebook, 5%);
+  }
+}
+.btn--twitter {
+  width: 8em;
+  display: block;
+  background-color: $cs-twitter;
+  border: 0.1em solid darken($cs-twitter, 5%);
+  &:hover, &:active, &:focus {
+    border-color: darken($cs-twitter, 10%);
+    background-color: darken($cs-twitter, 5%);
+  }
+}
