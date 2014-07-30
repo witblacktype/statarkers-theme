@@ -11,6 +11,7 @@
 
 form {
   width: 100%;
+  padding: 2em;
   @include clearfix;
   border-radius: 0.2em;
   -webkit-appearance: none;
@@ -25,7 +26,7 @@ fieldset {
   margin-bottom: 2em;
   border-radius: 0.2em;
   border-color: $formBorderColor;
-  background-color: lighten($lighterGrey, 5%);
+  background-color: $lighterGrey;
 }
 
 input[type],
@@ -35,4 +36,4 @@ textarea {
   border: 1px solid $formBorderColor;
 }
 input[type="checkbox"] { width: auto; }
-.success { color: $cs-a2; }
+.success { color: $cs-a1; }

@@ -12,7 +12,7 @@ $black        :  rgb(0, 0, 0);
 $darkGrey     :  lighten($black, 25%);
 $grey         :  lighten($black, 50%);
 $lightGrey    :  lighten($black, 75%);
-$lighterGrey  :  lighten($black, 95%);
+$lighterGrey  :  lighten($black, 90%);
 $white        :  rgb(255, 255, 255);
 
 // SITE COLOURS ================================================================
@@ -59,7 +59,7 @@ $tableFontColor   :  $cs-font;
 // FORMS =======================================================================
 
 $formBg           :  $white;
-$formBorderColor  :  transparent;
+$formBorderColor  :  $lighterGrey;
 
 // HEADER & FOOTER BACKGROUNDS =================================================
 
