@@ -20,8 +20,8 @@ Out of the box Statarkers supports IE8 and all modern browsers. To provide a bas
 An example form template and partial are included with the theme, to make use of them you will need to have [Raven Forms](http://statamic.com/add-ons/raven) installed. To get the example working just change the `to` and `from` variables on lines 3 & 4 of the _config/formsets/contact.yaml file. If you don't want to use Raven just delete:
 
 - _config/formsets
-- contact.html template
-- _contact_form.html partial
+- _themes/statarkers/templates/contact.html
+- _themes/statarkers/partials/_contact_form.html
 
 ## Theme Use
 You can use Statarkers in any way you wish, please feel free to fork it on github. As the theme is offered for free, it’s also offered with limited support. If you find a bug, please let me know and I’ll fix it as soon as possible. Any improvements and feature requests can be asked through github.
