@@ -55,7 +55,7 @@ a {
   &:visited { color: $cs-font; }
   &:hover, &:active, &:focus { color: $cs-font; text-decoration: underline; }
 }
-strong, b {
+strong, b, .callout {
   font-style: normal;
   font-weight: $boldFontWeight;
 }
