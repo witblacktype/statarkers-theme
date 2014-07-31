@@ -1,8 +1,8 @@
 # Configure notification email
 email:
-  to: gareth.redfern@gmail.com
-  from: gareth.redfern@gmail.com
-  subject: Message From Gareth Redfern Design
+  to: your.email@example.com
+  from: your.email@example.com
+  subject: Message From The Statarkers Theme
   automagic: true
   # html_template: html_email
   # text_template: text_email
