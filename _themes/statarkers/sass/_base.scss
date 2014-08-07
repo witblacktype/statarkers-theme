@@ -112,3 +112,7 @@ mark {
 .icon-alone {
   display: inline-block; // Fix for clickability issue in WebKit
 }
+
+.error, .errors { color: $cs-error; }
+.warning { color: $cs-warning; }
+.success { color: $cs-success; }
