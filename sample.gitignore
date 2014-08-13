@@ -4,7 +4,6 @@
 /_cache/_add-ons/
 *.log
 /assets/img/cache/
-
-node_modules/ # for grunt users 
+node_modules/
 
 # These are some useful ignores for Statamic theme building. #
