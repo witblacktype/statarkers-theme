@@ -9,4 +9,10 @@
 // Modules can sometimes sit within other Modules, too.
 // Each Module should be designed to exist as a standalone component.
 
-.site__header { padding: 2em 0; }
+.site__header {
+  padding: 2em 0;
+  margin-bottom: 1em;
+  text-align: center;
+  background-color: $lighterGrey;
+  .brand { margin-top: 0; }
+}

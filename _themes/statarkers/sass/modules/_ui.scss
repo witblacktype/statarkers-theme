@@ -18,22 +18,19 @@
 // BUTTONS
 ////////////////////////////////////////////////////////////////////////////////
 .btn {
-  color: $white;
-  margin-top: 0.5em;
+  border: none;
+  font-style: normal;
   text-align: center;
   padding: 0.3em 1em;
-  border-radius: 0.3em;
   display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
   background-color: $cs-a1;
   @include transition(0.2s);
+  text-transform: uppercase;
+  font-weight: $boldFontWeight;
   border: 0.1em solid darken($cs-a1, 5%);
-  &:link, &:visited { color: $white; }
-  &:hover, &:active, &:focus {
-    color: $white;
-    text-decoration: none;
-    border-color: darken($cs-a1, 10%);
-    background-color: darken($cs-a1, 5%);
-  }
+  &:hover, &:active, &:focus { text-decoration: none!important; }
 }
 
 .btn--cta {
@@ -65,4 +62,135 @@
     border-color: darken($cs-twitter, 10%);
     background-color: darken($cs-twitter, 5%);
   }
+}
+
+.btn--default {
+  color: $cs-font;
+  border-color: $lightGrey;
+  background-color: $white;
+  &:link, &:visited { color: $cs-font; }
+  &:hover, &:active, &:focus {
+    color: $cs-font;
+    border-color: darken($lightGrey, 5%);
+    background-color: $lighterGrey;
+  }
+}
+
+.btn--primary {
+  color: $white;
+  background-color: $cs-btn-primary;
+  border-color: darken($cs-btn-primary, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($cs-btn-primary, 10%);
+    background-color: darken($cs-btn-primary, 5%);
+  }
+}
+
+.btn--success {
+  color: $white;
+  background-color: $cs-btn-success;
+  border-color: darken($cs-btn-success, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($cs-btn-success, 10%);
+    background-color: darken($cs-btn-success, 5%);
+  }
+}
+
+
+.btn--info {
+  color: $white;
+  background-color: $cs-btn-info;
+  border-color: darken($cs-btn-info, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($cs-btn-info, 10%);
+    background-color: darken($cs-btn-info, 5%);
+  }
+}
+
+.btn--warning {
+  color: $white;
+  background-color: $cs-btn-warning;
+  border-color: darken($cs-btn-warning, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($cs-btn-warning, 10%);
+    background-color: darken($cs-btn-warning, 5%);
+  }
+}
+
+.btn--danger {
+  color: $white;
+  background-color: $cs-btn-danger;
+  border-color: darken($cs-btn-danger, 5%);
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($cs-btn-danger, 10%);
+    background-color: darken($cs-btn-danger, 5%);
+  }
+}
+
+.btn--flatlight {
+  color: $white;
+  border: 0.15em solid $white;
+  background-color: transparent;
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus {
+    color: $white;
+    border-color: darken($white, 10%);
+    background-color: transparent;
+  }
+}
+
+.btn--flatdark {
+  color: $black;
+  border: 0.15em solid $black;
+  background-color: transparent;
+  &:link, &:visited { color: $black; }
+  &:hover, &:active, &:focus {
+    color: $black;
+    border-color: lighten($black, 10%);
+    background-color: transparent;
+  }
+}
+
+// ALERTS
+////////////////////////////////////////////////////////////////////////////////
+
+.alert {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.2em;
+  border: 0.1em solid $lighterGrey;
+}
+
+.alert--success {
+  color: $cs-alert-success;
+  border-color: lighten($cs-alert-success, 40%);
+  background-color: lighten($cs-alert-success, 50%);
+}
+
+.alert--info {
+  color: $cs-alert-info;
+  border-color: lighten($cs-alert-info, 40%);
+  background-color: lighten($cs-alert-info, 50%);
+}
+
+.alert--warning {
+  color: $cs-alert-warning;
+  border-color: lighten($cs-alert-warning, 40%);
+  background-color: lighten($cs-alert-warning, 50%);
+}
+
+.alert--danger {
+  color: $cs-alert-danger;
+  border-color: lighten($cs-alert-danger, 40%);
+  background-color: lighten($cs-alert-danger, 50%);
 }

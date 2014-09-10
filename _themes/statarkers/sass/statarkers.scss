@@ -1,14 +1,13 @@
 //======================================
-// STATAMIC.SCSS
+// MAIN.SCSS
 //======================================
 
 // ==========================
-// COMPASS, VARIABLES, MIXINS
+// HELPERS, VARIABLES, MIXINS
 // ==========================
-@import "variables";
+@import "config/manifest.scss";
 @import "../bower_components/bourbon/dist/bourbon";
 @import "mixins";
-@import "mq";
 
 // =================
 // BASE RULES
@@ -21,16 +20,14 @@
 @import "layout";
 
 // =================
-// MODULE RULES
+// NAVIGATION RULES
 // =================
-@import "modules/forms";
-@import "modules/tables";
-@import "modules/site_header";
-@import "modules/navigation";
-@import "modules/site_footer";
-@import "modules/ui";
+@import "navigation/manifest.scss";
 
 // =================
-// IE RULES
+// MODULE RULES
 // =================
-@import "ie";
+@import "vendor/manifest.scss";
+@import "modules/manifest.scss";
+@import "pages/manifest.scss";
+@import "theme/manifest.scss";

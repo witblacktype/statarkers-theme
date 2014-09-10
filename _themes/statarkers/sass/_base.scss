@@ -7,20 +7,13 @@
 // It doesn't include any class or ID selectors.
 // It is defining the default styling for how that element should look in all occurrences on the page.
 
-// PLACEHOLDERS ================================================================
-
-%no_list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
 // DROP THE BASE ===============================================================
+
+* { -webkit-font-smoothing: antialiased; }
 
 html  {
   font-size: 100%;
-  background-color: $cs-htmlBg;
+  background-color: $cs-a1;
   -webkit-font-smoothing: antialiased;
 }
 body {
@@ -32,28 +25,30 @@ body {
   background-color: $cs-bodyBg;
   font-weight: $mainFontWeight;
 }
-h1 { font-size: em(36); margin-bottom: 0; }
-h2 { font-size: em(24); margin-bottom: 0.5em; }
-h3 { font-size: em(18); margin-bottom: 0.5em; }
-h4 { font-size: em(16); margin-bottom: 0; }
-h5 { font-size: em(16); margin-bottom: 0; }
-h6 { font-size: em(16); margin-bottom: 0; }
+h1 { font-size: em(36); margin-top: 0; margin-bottom: 0; }
+h2 { font-size: em(24); margin-top: 0.2em; margin-bottom: 0; }
+h3 { font-size: em(18); margin-top: 0.2em; margin-bottom: 0; }
+h4 { font-size: em(16); margin-top: 0.2em; margin-bottom: 0; }
+h5 { font-size: em(16); margin-top: 0.2em; margin-bottom: 0; }
+h6 { font-size: em(16); margin-top: 0.2em; margin-bottom: 0; }
 
 h1,h2,h3,h4,h5,h6 {
   color: $cs-heading;
   font-style: normal;
   font-family: $font-sans-heading;
   font-weight: $headingFontWeight;
+  a:link, a:visited { color: $cs-heading; text-decoration: none; }
+  a:hover, a:active, a:focus { color: $cs-heading; text-decoration: none; }
 }
 
 h4,h5,h6 { margin-bottom: 0; }
 h1+ p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p { margin-top: 0; }
 a {
   color: $cs-font;
-  text-decoration: none;
+  text-decoration: underline;
   @include transition(0.3s);
-  &:visited { color: $cs-font; }
-  &:hover, &:active, &:focus { color: $cs-font; text-decoration: underline; }
+  a:link, &:visited { color: $cs-font; }
+  &:hover, &:active, &:focus { color: $cs-font; text-decoration: none; }
 }
 strong, b, .callout {
   font-style: normal;
@@ -65,22 +60,8 @@ em, i {
 }
 code { background-color: $lighterGrey; }
 pre code { background-color: transparent; }
-.screen-reader-text, .ir { @include hide-text; }
-.vh {
-  border: 0;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  position: absolute;
-  clip: rect(0 0 0 0);
-}
+
 img { max-width: 100%; height: auto; vertical-align: bottom; }
-
-.left { float: left; }
-.right { float: right; }
-
 blockquote {
   margin-left: 0;
   font-weight: 300;
@@ -88,31 +69,15 @@ blockquote {
   color: $cs-font;
   font-style: italic;
 }
+ol,ul { padding-left: 1.3em; }
 dt { font-weight: bold; }
 dd { margin-bottom: 1em; }
 iframe, object { max-width: 100%; }
-.hide, .screen-reader-text {
-  top: -9999px;
-  left: -9999px;
-  position: absolute;
-}
-.text--left { text-align: left; }
-.text--right { text-align: right; }
-.text--center { text-align: center; }
 figure { margin: 0; }
-.lead { font-size: 1.3em; }
-.no-list { @extend %no_list; }
+
 button { outline: none; }
 textarea { min-height: 10em; }
 mark {
   color: $black;
   background-color: rgb(255, 255, 0);
 }
-
-.icon-alone {
-  display: inline-block; // Fix for clickability issue in WebKit
-}
-
-.error, .errors { color: $cs-error; }
-.warning { color: $cs-warning; }
-.success { color: $cs-success; }
