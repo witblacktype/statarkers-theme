@@ -15,8 +15,8 @@
 // END PLACEHOLDERS ============================================================
 
 .lead { font-size: 1.3em; }
-.list-unstyled { @extend %no_list; }
-.indent-list { padding-left: 0.5em; }
+.list--unstyled { @extend %no_list; }
+.list--indent { padding-left: 0.5em; }
 .hide, .screen-reader-text {
   top: -9999px;
   left: -9999px;
@@ -52,7 +52,7 @@
 @include mq($from: tablet) {
   .left { float: left; }
   .right { float: right; }
-  .list-inline > li {
+  .list--inline > li {
     padding-left: 1em;
     padding-right: 1em;
     display: inline-block;
@@ -76,7 +76,7 @@
     left: auto;
     position: static;
   }
-  .list-inline > li {
+  .list--inline > li {
     padding-left: 1em;
     padding-right: 1em;
     display: inline-block;
