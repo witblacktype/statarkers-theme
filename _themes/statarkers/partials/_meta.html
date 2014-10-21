@@ -1,6 +1,6 @@
 {{# TOP LEVEL PAGES === #}}
 
-{{ if segment_1 != "404" && segment_1 != "blog" }}
+{{ if _response != "404" && segment_1 != "blog" }}
   <title>{{ if meta_title|not_empty }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   {{ if meta_desc|not_empty }}
   <meta name="description" content="{{ meta_desc|striptags }}">
@@ -28,7 +28,7 @@
 
 {{# 404 =============== #}}
 
-{{ if segment_1 == "404" }}
+{{ _response == "404" }}
   <title>Page Missing | {{ _site_name }}</title>
   <meta name="description" content="Sorry the page you are looking for is missing, it may have been moved or deleted, please use the navigation to search for similar content.">
 {{ endif }}
