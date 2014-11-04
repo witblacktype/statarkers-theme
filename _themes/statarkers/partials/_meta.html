@@ -28,7 +28,7 @@
 
 {{# 404 =============== #}}
 
-{{ _response == "404" }}
+{{ if _response == "404" }}
   <title>Page Missing | {{ _site_name }}</title>
   <meta name="description" content="Sorry the page you are looking for is missing, it may have been moved or deleted, please use the navigation to search for similar content.">
 {{ endif }}
