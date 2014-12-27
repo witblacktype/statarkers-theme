@@ -1,11 +1,11 @@
 <main role="main">
   {{ if alt_title }}
-  <h2>{{ alt_title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
+  <h2 class="main__heading">{{ alt_title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
   {{ else }}
-  <h2>{{ title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
+  <h2 class="main__heading">{{ title }}{{ if get:page > 0 }} &ndash; Page {{ get:page }}{{ endif }}</h2>
   {{ endif }}
   {{ content }}
-</main><!-- END role="main" -->
+</main>
 
 <section class="articles">
 {{ theme:partial src="_article_listing" fold="{blog_name}" lim="5" tax="no" }}

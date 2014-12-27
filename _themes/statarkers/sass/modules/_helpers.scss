@@ -6,7 +6,7 @@
 
 // PLACEHOLDERS ================================================================
 
-%no_list {
+%remove_list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -15,7 +15,7 @@
 // END PLACEHOLDERS ============================================================
 
 .lead { font-size: 1.3em; }
-.list--unstyled { @extend %no_list; }
+.list--unstyled { @extend %remove_list; }
 .list--indent { padding-left: 0.5em; }
 .hide, .screen-reader-text {
   top: -9999px;
@@ -49,12 +49,21 @@
 .success { color: $cs-alert-success; }
 .error, .errors { color: $cs-alert-danger; }
 
+.nav {
+  a {
+    &:link, &:visited { text-decoration: none; }
+    &:hover, &:active, &:focus { text-decoration: none; }
+  }
+}
+
+.clear { clear: both; }
+
 @include mq($from: tablet) {
   .left { float: left; }
   .right { float: right; }
   .list--inline > li {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     display: inline-block;
     &:first-child { padding-left: 0; }
   }
@@ -64,7 +73,7 @@
   .break-desktop { display: block; }
 }
 
-// IE STYLES
+// IE RULES
 // =============================================================================
 
 .lt-ie9 {

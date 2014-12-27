@@ -8,12 +8,12 @@
   {{ else }}
 
     {{ if first }}
-    <ol class="articleList">
+    <ol class="article-list">
     {{ endif }}
-      <li class="articleList__item">
+      <li class="article-list__item">
         <article class="article">
           <h3><a href="{{ url }}">{{ title }}</a></h3>
-          
+
           {{ if author || date || categories_list || tags_list }}
           <div class="article__meta">
 
@@ -26,7 +26,7 @@
             {{ if date }}
             <p class="article__date">Posted on: <time datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
             {{ endif }}
-            
+
             {{ if categories_list && tags_list }}
             <p class="article__tax"><b>Category:</b> {{ categories_url_list }} | <b>Tagged:</b> {{ tags_url_list }}</p>
             {{ endif }}
@@ -55,7 +55,7 @@
           {{ summary|smartypants|markdown }}
 
           <p class="article__more"><a href="{{ url }}">Keep Reading &rarr;</a></p>
-          
+
         </article>
       </li>
     {{ if last }}
@@ -79,7 +79,7 @@
     {{ endif }}
 
     <span class="pagination__number">Page {{ current_page }} of {{ total_pages }}</span>
-    
+
     {{ if next_page }}
       <a href="{{ next_page }}" class="pagination__next">Next &rarr;</a>
     {{ endif }}
@@ -87,7 +87,7 @@
   {{ endif }}
 {{ /entries:pagination }}
 
-{{# 
+{{#
 ====================================
   NOTES
 ====================================

@@ -11,7 +11,7 @@
 .constrain {
   margin: 0 auto;
   padding: 0 1em;
-  max-width: em(980);
+  max-width: em($constrain);
 }
 
 @include mq($from: tablet) {
