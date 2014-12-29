@@ -19,7 +19,6 @@ grunt.initConfig({
     sass: {
       dist: {
         options: {
-          sourcemap: true,
           style: 'compressed'
         },
         files: {
