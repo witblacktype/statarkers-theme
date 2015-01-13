@@ -8,6 +8,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{{# Hide from serach engines whilst in dev mode. #}}
+{{ if hide_site }}
+<meta name="robots" content="noindex">
+{{ endif }}
+
 {{# Place favicon.ico and apple-touch-icon.png in the root directory. #}}
 
 <!-- styles -->

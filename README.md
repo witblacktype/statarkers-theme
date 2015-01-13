@@ -44,7 +44,8 @@ To install the theme follow the instructions below.
 10. Add the gitignore file to the root of your project/site (remove sample from the front of the file name), in here there are some handy ignores for Statamic.
 11. If you are using Grunt navigate to your theme folder, open up the terminal and type `npm install`. This will add all the required plugins from the package.json file.
 12. If you are using Bower make sure you have added or removed the dependencies you require in the bower.json file and changed the name of the project etc. then navigate to your theme folder in the terminal and type `bower update` to pull in all the required dependencies.
-13. Finally you can navigate to your theme folder and type `grunt watch` in your terminal to have Grunt compile and compress your Sass and JS files.
+13. Navigate to your theme folder and type `grunt watch` in your terminal to have Grunt compile and compress your Sass and JS files.
+14. Add the dev.yaml to your _config/environments folder.
 
 ##More Information
 
