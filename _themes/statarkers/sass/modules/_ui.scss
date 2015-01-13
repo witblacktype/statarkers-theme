@@ -19,25 +19,28 @@
 // =============================================================================
 
 .btn {
-  color: $white;
+  color: $cs-a1;
+  line-height: 1;
   font-style: normal;
   text-align: center;
-  padding: 0.3em 1em;
+  border-radius: 0.1em;
   display: inline-block;
   text-decoration: none;
   vertical-align: middle;
-  background-color: $cs-a1;
   @include transition(0.2s);
-  text-transform: uppercase;
-  font-weight: $boldFontWeight;
+  padding: 0.4em 1em 0.5em;
+  font-weight: $lightFontWeight;
+  background-color: transparent;
   border: 0.1em solid darken($cs-a1, 5%);
-  &:link, &:visited { color: $white; text-decoration: none!important; }
+  &:link, &:visited { color: $cs-a1; }
   &:hover, &:active, &:focus { text-decoration: none!important; }
 }
 
 .btn--cta {
+  color: $white;
   background-color: $cs-a2;
   border: 0.1em solid darken($cs-a2, 5%);
+  &:link, &:visited { color: $white; }
   &:hover, &:active, &:focus {
     @include transform( scale(1.2) );
     border-color: darken($cs-a2, 10%);
@@ -162,6 +165,16 @@
   }
 }
 
+.btn--inline {
+  margin-right: 0.5em;
+  &:last-child { margin-right: 0; }
+}
+
+.nav .home-link {
+  &:link, &:visited { color: $white; }
+  &:hover, &:active, &:focus { color: $cs-a2; }
+}
+
 // ALERTS
 // =============================================================================
 
@@ -170,28 +183,69 @@
   margin-bottom: 1em;
   border-radius: 0.2em;
   border: 0.1em solid $lighterGrey;
+  p:first-of-type { margin-top: 0; }
 }
 
 .alert--success {
   color: $cs-alert-success;
   border-color: lighten($cs-alert-success, 40%);
   background-color: lighten($cs-alert-success, 50%);
+  a {
+    &:link, &:visited { color: $cs-alert-success;  }
+    &:hover, &:active, &:focus { color: $cs-alert-success; }
+  }
+  h1,h2,h3,h4,h5,h6 { color: $cs-alert-success; }
 }
 
 .alert--info {
   color: $cs-alert-info;
   border-color: lighten($cs-alert-info, 40%);
   background-color: lighten($cs-alert-info, 50%);
+  a {
+    &:link, &:visited { color: $cs-alert-info;  }
+    &:hover, &:active, &:focus { color: $cs-alert-info; }
+  }
+  h1,h2,h3,h4,h5,h6 { color: $cs-alert-info; }
 }
 
 .alert--warning {
   color: $cs-alert-warning;
   border-color: lighten($cs-alert-warning, 40%);
   background-color: lighten($cs-alert-warning, 50%);
+  a {
+    &:link, &:visited { color: $cs-alert-warning;  }
+    &:hover, &:active, &:focus { color: $cs-alert-warning; }
+  }
+  h1,h2,h3,h4,h5,h6 { color: $cs-alert-warning; }
 }
 
 .alert--danger {
   color: $cs-alert-danger;
   border-color: lighten($cs-alert-danger, 40%);
   background-color: lighten($cs-alert-danger, 50%);
+  a {
+    &:link, &:visited { color: $cs-alert-danger;  }
+    &:hover, &:active, &:focus { color: $cs-alert-danger; }
+  }
+  h1,h2,h3,h4,h5,h6 { color: $cs-alert-danger; }
+}
+
+// LIST FORMATTING
+// =============================================================================
+
+.list--underlined {
+  margin-bottom: 2em;
+  > li {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    border-bottom: 0.1em dashed $lightGrey;
+  }
+  a {
+    &:link, &:visited {
+      text-decoration: none;
+    }
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
 }

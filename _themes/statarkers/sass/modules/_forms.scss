@@ -22,6 +22,7 @@ form {
   div { margin-bottom: 1em; }
 }
 label { cursor: pointer; display: inline-block; }
+legend { color: $cs-heading; }
 fieldset {
   padding-top: 1em;
   margin-bottom: 2em;
@@ -32,6 +33,7 @@ fieldset {
 
 input[type="tel"],
 input[type="text"],
+input[type="date"],
 input[type="email"],
 input[type="search"],
 input[type="number"],
