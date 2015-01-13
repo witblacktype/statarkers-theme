@@ -3,7 +3,7 @@
 /_cache/_app/
 /_cache/_add-ons/
 *.log
-/assets/img/cache/
+/assets/img/resized/
 node_modules/
 
 # These are some useful ignores for Statamic theme building. #
