@@ -69,6 +69,7 @@
 .list--dashed {
   li {
     padding-top: 0.5em;
+    margin-bottom: 0.3em;
     border-bottom: 0.1em dashed $lighterGrey;
   }
 }
@@ -88,6 +89,29 @@
 @include mq($from: desktop) {
   .lead { font-size: 1.3em; }
   .break-desktop { display: block; }
+}
+
+// IMAGES
+// =============================================================================
+
+.img--rounded {
+  border-radius: 0.3em;
+}
+.img--circle {
+  border-radius: 50%;
+}
+
+.img--thumbnail {
+  @include transition(0.2s);
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 0.3em;
+  background-color: $white;
+  border: 1px solid $lighterGrey;
+}
+
+@include mq($from: desktop) {
+  margin-top: 0;
 }
 
 // IE RULES
@@ -110,5 +134,7 @@
   }
   .lead { font-size: 1.3em; }
   .break-desktop { display: block; }
+
+  .img--thumbnail { margin-top: 0; }
 
 }
