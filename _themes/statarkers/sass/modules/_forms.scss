@@ -45,6 +45,12 @@ textarea {
 }
 .help-block { margin-top: 0.5em; margin-bottom: 0.5em; }
 input[type="search"] { @include box-sizing(border-box); }
+input[type="date"] {
+  height: 2.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  -webkit-appearance: none;
+}
 
 // RADIOS & CHECKBOXES
 // =============================================================================
