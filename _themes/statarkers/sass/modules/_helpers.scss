@@ -74,6 +74,12 @@
   }
 }
 
+.item--highlight {
+  color: $cs-a1;
+  &:link, &:visited { color: $cs-a1; }
+  &:hover, &:active, &:focus { color: $cs-a1; }
+}
+
 @include mq($from: tablet) {
   .left { float: left; }
   .right { float: right; }
