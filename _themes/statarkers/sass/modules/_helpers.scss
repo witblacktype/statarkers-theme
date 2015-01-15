@@ -80,23 +80,6 @@
   &:hover, &:active, &:focus { color: $cs-a1; }
 }
 
-@include mq($from: tablet) {
-  .left { float: left; }
-  .right { float: right; }
-  .list--inline > li {
-    padding-left: 1em;
-    padding-right: 1em;
-    display: inline-block;
-    &:first-child { padding-left: 0; }
-  }
-  .lead { font-size: 1.2em; }
-}
-
-@include mq($from: desktop) {
-  .lead { font-size: 1.3em; }
-  .break-desktop { display: block; }
-}
-
 // IMAGES
 // =============================================================================
 
@@ -116,8 +99,30 @@
   border: 1px solid $lighterGrey;
 }
 
+// TABLET
+// =============================================================================
+
+@include mq($from: tablet) {
+
+  .left { float: left; }
+  .right { float: right; }
+  .list--inline > li {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-block;
+    &:first-child { padding-left: 0; }
+  }
+  .lead { font-size: 1.2em; }
+  
+}
+
+// DESKTOP
+// =============================================================================
+
 @include mq($from: desktop) {
 
+  .lead { font-size: 1.3em; }
+  .break-desktop { display: block; }
   .img--thumbnail { margin-top: 0; }
 
 }

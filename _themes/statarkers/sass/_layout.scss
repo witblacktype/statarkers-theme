@@ -14,6 +14,9 @@
   max-width: em($constrain);
 }
 
+// TABLET
+// =============================================================================
+
 @include mq($from: tablet) {
   body { font-size: em(16); }
 }
