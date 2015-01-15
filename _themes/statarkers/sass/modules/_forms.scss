@@ -11,7 +11,7 @@
 
 form {
   width: 100%;
-  padding: 2em;
+  padding: 0.5em;
   @include clearfix;
   margin-bottom: 1em;
   border-radius: 0.2em;
@@ -116,3 +116,21 @@ fieldset[disabled] input[type=checkbox] { cursor: not-allowed; }
 }
 
 select[multiple], select[size] { height: auto; }
+
+// DESKTOP
+// =============================================================================
+
+@include mq($from: desktop) {
+
+  form { padding: 2em; }
+
+}
+
+// IE RULES
+// =============================================================================
+
+.lt-ie9 {
+
+  form { padding: 2em; }
+
+}
