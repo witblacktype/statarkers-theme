@@ -1,5 +1,5 @@
 // =====================================
-// BASE RULES
+// HELPER RULES
 // =====================================
 
 // A collection of simple generic classes and Sass helpers.
@@ -63,6 +63,12 @@
     &:hover, &:active, &:focus { text-decoration: none; }
   }
 }
+.nav--spaced-vertical {
+  li {
+    margin-bottom: 0.5em;
+    &:last-child { margin-bottom: 0; }
+  }
+}
 
 .clear { clear: both; }
 
@@ -103,7 +109,6 @@
 // =============================================================================
 
 @include mq($from: tablet) {
-
   .left { float: left; }
   .right { float: right; }
   .list--inline > li {
@@ -113,18 +118,15 @@
     &:first-child { padding-left: 0; }
   }
   .lead { font-size: 1.2em; }
-  
 }
 
 // DESKTOP
 // =============================================================================
 
 @include mq($from: desktop) {
-
   .lead { font-size: 1.3em; }
   .break-desktop { display: block; }
   .img--thumbnail { margin-top: 0; }
-
 }
 
 // IE RULES
