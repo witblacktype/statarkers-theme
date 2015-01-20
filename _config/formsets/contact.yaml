@@ -1,11 +1,13 @@
-# Configure notification email
-email:
-  to: your.email@example.com
-  from: your.email@example.com
-  subject: Message From The Statarkers Theme
-  automagic: true
-  # html_template: html_email
-  # text_template: text_email
+###########################################################################################
+#
+#  CONTACT RAVEN FORMSET
+#
+#  Formsets can override any default settings (raven.yaml) EXCEPT master_killswitch
+#
+###########################################################################################
+
+# Location (from root) to save form submissions
+submission_save_path: _forms/
 
 # Fields allowed to be submitted in the form, automatically
 # purging anything and everything else
@@ -13,6 +15,7 @@ allowed:
   - name
   - email
   - message
+  - raven_address
 
 # You are not required to require fields, but once you do, any missing
 # from the POST will squash this submission and send a list of
@@ -27,16 +30,21 @@ required:
 validate:
   name: alpha
   email: email
+  raven_address: primeNumber
 
-# Error messages can be mapped to your fields and passed to the
-# template upon failure. They will be available here:
-#
-# {{ raven:error }}
-#     {{ invalid }}
-#         {{ field }} : {{ message }}
-#     {{ /invalid }}
-# {{ /raven:error }}
-#
 messages:
   name: "Your name must be made of letters only."
   email: "Your email address must be a valid one."
+
+# Configure notification email
+send_notification_email: true
+email:
+  to: gareth@example.com
+  from: "{{ email }}"
+  subject: Message From {{ _site_name }} Website
+  automagic: false
+  html_template: emails/contact_html
+  text_template: emails/contact_text
+
+control_panel:
+  exclude: true
