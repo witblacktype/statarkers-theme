@@ -1,15 +1,15 @@
-{{ theme:partial src="_doc_head" }}
+{{ theme:partial src="site/_doc_head" }}
 <body class="site {{ if segment_1 == "" }}home{{ else }}{{ segment_1 }}{{ endif }}">
 
-  {{ theme:partial src="_header" }}
+  {{ theme:partial src="site/_header" }}
 
-  {{ theme:partial src="_nav" }}
+  {{ theme:partial src="nav/_main_nav" }}
 
   <div class="constrain">
     {{ layout_content }}
   </div><!-- END .constrain -->
 
-  {{ theme:partial src="_footer" }}
+  {{ theme:partial src="site/_footer" }}
 
 <!--[if gte IE 8]><!-->
 <script src="{{ theme:js }}"></script>
