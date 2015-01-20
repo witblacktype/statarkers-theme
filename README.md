@@ -22,6 +22,7 @@ An example form template and partial are included with the theme, to make use of
 - _config/formsets
 - _themes/statarkers/templates/contact.html
 - _themes/statarkers/partials/forms/_contact_form.html
+- _themes/statarkers/templates/emails/
 
 ## Theme Use
 You can use Statarkers in any way you wish, please feel free to fork it on github. As the theme is offered for free, it’s also offered with limited support. If you find a bug, please let me know and I’ll fix it as soon as possible. Any improvements and feature requests can be asked through github.
