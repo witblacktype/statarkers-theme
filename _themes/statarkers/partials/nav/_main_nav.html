@@ -2,16 +2,16 @@
   <div class="constrain">
     <ul class="nav__list nav__list--primary">
       <li class="nav__listItem">
-        <a href="{{ homepage }}"{{ if segment_1 == "" }} class="current"{{ endif }}>Home</a>
+        <a href="{{ homepage }}"{{ if segment_1 == "" }} class="is-current"{{ endif }}>Home</a>
       </li>
       {{ nav from="/" max_depth="2" }}
       <li class="nav__listItem">
-        <a href="{{ url }}"{{ if is_current }} class="current"{{ endif }}>{{ title }}</a>
+        <a href="{{ url }}"{{ if is_current }} class="is-current"{{ endif }}>{{ title }}</a>
         {{ if children }}
         <ul>
           {{ children }}
           <li class="nav__listItem">
-            <a href="{{ url }}"{{ if is_current }} class="current"{{ endif }}>{{ title }}</a>
+            <a href="{{ url }}"{{ if is_current }} class="is-current"{{ endif }}>{{ title }}</a>
           </li>
           {{ /children }}
         </ul>
