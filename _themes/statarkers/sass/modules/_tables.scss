@@ -13,13 +13,13 @@ table {
   width: 100%;
   margin-bottom: 1em;
   color: $tableFontColor;
-  background-color: $tableBg;
+  background-color: $tableBgColor;
   border: 0.1em solid $tableBorderColor;
 
   caption { font-weight: bold; }
   thead {
     text-align: left;
-    background-color: darken($tableBg, 15%);
+    background-color: darken($tableBgColor, 15%);
 
     th { border-color: $tableBorderColor; }
   }
@@ -32,12 +32,12 @@ table {
   th[scope="rowgroup"] { text-align: left; }
 
   tbody tr:nth-of-type(even) {
-    background-color: darken($tableBg, 3%);
+    background-color: darken($tableBgColor, 3%);
   }
   tfoot {
     font-size: 75%;
     color: $tableFontColor;
-    background-color: darken($tableBg, 15%);
+    background-color: darken($tableBgColor, 15%);
 
     td { text-align: center; }
   }

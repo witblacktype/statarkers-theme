@@ -68,14 +68,14 @@ $navSelectColor   :  darken($grey, 5%);
 
 // TABLES ======================================================================
 
-$tableBg          :  $white;
-$tableBorderColor :  $lightGrey;
+$tableBgColor     :  $white;
+$tableBorderColor :  darken($lighterGrey, 5%);
 $tableFontColor   :  $cs-font;
 
 // FORMS =======================================================================
 
 $formBg           :  $white;
-$formBorderColor  :  $lighterGrey;
+$formBorderColor  :  darken($lighterGrey, 5%);
 
 // HEADER & FOOTER BACKGROUNDS =================================================
 
