@@ -37,7 +37,6 @@ messages:
   email: "Your email address must be a valid one."
 
 # Configure notification email
-send_notification_email: true
 email:
   to: gareth@example.com
   from: "{{ email }}"
@@ -47,4 +46,8 @@ email:
   text_template: emails/contact_text
 
 control_panel:
-  exclude: true
+  exclude: false
+  fields:
+    - name
+    - email
+    - message
