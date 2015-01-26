@@ -1,11 +1,11 @@
 <main role="main">
   {{ if alt_title }}
-  <h2 class="main__heading">{{ alt_title }}</h2>
+  <h2>{{ alt_title }}</h2>
   {{ else }}
-  <h2 class="main__heading">{{ title }}</h2>
+  <h2>{{ title }}</h2>
   {{ endif }}
   {{ content }}
-  <div class="contact-form">
+  <div>
     {{ theme:partial src="forms/_contact_form" }}
   </div>
 </main>

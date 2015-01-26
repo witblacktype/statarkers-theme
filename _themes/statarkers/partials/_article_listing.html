@@ -8,35 +8,35 @@
   {{ else }}
 
     {{ if first }}
-    <ol class="article-list">
+    <ol>
     {{ endif }}
-      <li class="article-list__item">
-        <article class="article">
+      <li>
+        <article>
           <h3><a href="{{ url }}">{{ title }}</a></h3>
 
           {{ if author || date || categories_list || tags_list }}
-          <div class="article__meta">
+          <div>
 
             {{ if author|not_empty }}
             {{ member:profile member="{author}" }}
-            <p class="article__author">Posted by: {{ first_name }} {{ last_name }}</p>
+            <p>Posted by: {{ first_name }} {{ last_name }}</p>
             {{ /member:profile }}
             {{ endif }}
 
             {{ if date }}
-            <p class="article__date">Posted on: <time datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
+            <p>Posted on: <time datetime="{{ datestamp format="Y-m-d" }}">{{ date }}</time></p>
             {{ endif }}
 
             {{ if categories_list && tags_list }}
-            <p class="article__tax"><b>Category:</b> {{ categories_url_list }} | <b>Tagged:</b> {{ tags_url_list }}</p>
+            <p><b>Category:</b> {{ categories_url_list }} | <b>Tagged:</b> {{ tags_url_list }}</p>
             {{ endif }}
 
             {{ if categories_list && !tags_list }}
-            <p class="article__tax"><b>Category:</b> {{ categories_url_list }}</p>
+            <p><b>Category:</b> {{ categories_url_list }}</p>
             {{ endif }}
 
             {{ if !categories_list && tags_list }}
-            <p class="article__tax"><b>Tagged:</b> {{ tags_url_list }}</p>
+            <p><b>Tagged:</b> {{ tags_url_list }}</p>
             {{ endif }}
 
           </div><!-- END .article__meta -->
@@ -49,12 +49,12 @@
             height="120"
             action="smart"
             quality="100"
-          }}" alt="" class="article__img">
+          }}" alt="">
           {{ endif }}
 
           {{ summary|smartypants|markdown }}
 
-          <p class="article__more"><a href="{{ url }}">Keep Reading &rarr;</a></p>
+          <p><a href="{{ url }}">Keep Reading &rarr;</a></p>
 
         </article>
       </li>
@@ -73,15 +73,15 @@
   taxonomy="{tax}"
 }}
   {{ if total_pages > 1 }}
-  <div class="pagination">
+  <div>
     {{ if previous_page }}
-      <a href="{{ previous_page }}" class="pagination__prev">&larr; Prev</a>
+      <a href="{{ previous_page }}">&larr; Prev</a>
     {{ endif }}
 
-    <span class="pagination__number">Page {{ current_page }} of {{ total_pages }}</span>
+    <span>Page {{ current_page }} of {{ total_pages }}</span>
 
     {{ if next_page }}
-      <a href="{{ next_page }}" class="pagination__next">Next &rarr;</a>
+      <a href="{{ next_page }}">Next &rarr;</a>
     {{ endif }}
   </div><!-- END .pagination -->
   {{ endif }}

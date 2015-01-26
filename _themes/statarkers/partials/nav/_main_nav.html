@@ -1,16 +1,15 @@
-<nav role="navigation" class="nav--primary">
-  <div class="constrain">
-    <ul class="nav__list nav__list--primary">
-      <li class="nav__listItem">
+<nav role="navigation">
+    <ul>
+      <li>
         <a href="{{ homepage }}"{{ if segment_1 == "" }} class="is-current"{{ endif }}>Home</a>
       </li>
       {{ nav from="/" max_depth="2" }}
-      <li class="nav__listItem">
+      <li>
         <a href="{{ url }}"{{ if is_current }} class="is-current"{{ endif }}>{{ title }}</a>
         {{ if children }}
         <ul>
           {{ children }}
-          <li class="nav__listItem">
+          <li>
             <a href="{{ url }}"{{ if is_current }} class="is-current"{{ endif }}>{{ title }}</a>
           </li>
           {{ /children }}
@@ -19,7 +18,6 @@
       </li>
       {{ /nav }}
     </ul>
-  </div><!-- END .constrain -->
 </nav>
 
 {{#
