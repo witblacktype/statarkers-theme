@@ -40,7 +40,7 @@ messages:
 email:
   to: gareth@example.com
   from: "{{ email }}"
-  subject: Message From {{ _site_name }} Website
+  subject: "Message From {{ _site_name }} Website"
   automagic: false
   html_template: emails/contact_html
   text_template: emails/contact_text
