@@ -24,7 +24,7 @@ If you dont want to use Bower or Grunt just delete the following folders/files
 Out of the box Statarkers supports IE8 and all modern browsers. To provide a basic layout for older browsers (IE7 & below) we use Normalize with no other styles aplied. The scripts in the default layout template use conditional comments to stop them loading below IE8. If you would like to support IE7 & below you can remove these elements.
 
 ## Raven Forms
-An example form template and partial are included with the theme, to make use of them you will need to have [Raven Forms](http://statamic.com/add-ons/raven) installed. To get the example working just change the `to` variable on line 42 of the _config/formsets/contact.yaml file. If you don't want to use Raven just delete:
+An example form template and partial are included with the theme, to make use of them you will need to have [Raven Forms](http://statamic.com/add-ons/raven) installed. To get the example working just change the `to` variable on line 42 of the _config/formsets/contact.yaml file. Then either add a [route](http://statamic.com/learn/advanced-features/routes) of `/contact : /contact` or set up a content page for your contact form in your _content folder and point the `_template` YAML to `contact` . If you don't want to use Raven just delete:
 
 - _config/formsets
 - _themes/statarkers/templates/contact.html
