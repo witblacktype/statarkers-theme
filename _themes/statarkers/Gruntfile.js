@@ -5,13 +5,28 @@ grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
 
+    concat: {
+      options: {
+        separator: ';',
+      },
+      dist: {
+        src: [
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/fitvids/jquery.fitvids.js',
+          'bower_components/FlexSlider/jquery.flexslider.js',
+          'js/app/<%= pkg.name %>.js'
+        ],
+        dest: 'js/build/<%= pkg.name %>.js',
+      },
+    },
+
     uglify: {
       target: {
         options: {
           sourceMap: true
         },
         files: {
-          'js/<%= pkg.name %>.js': ['js/app/<%= pkg.name %>.js']
+          'js/<%= pkg.name %>.js': ['js/build/<%= pkg.name %>.js']
         }
       }
     },
@@ -52,11 +67,12 @@ grunt.initConfig({
   });
 
   // Load the plugin that provides the tasks.
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify','sass']);
+  grunt.registerTask('default', ['concat','uglify','sass']);
 
 };

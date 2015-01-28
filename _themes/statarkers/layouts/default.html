@@ -11,6 +11,10 @@
 
   {{ theme:partial src="site/_footer" }}
 
+<!--[if IE 8]>
+<script src="{{ theme:js src="libs/DOMAssistantCompressed-2.8.1.js" }}"></script>
+<script src="{{ theme:asset src="bower_components/selectivizr/selectivizr.js" }}"></script>
+<![endif]-->
 <!--[if gte IE 8]><!-->
 <script src="{{ theme:js }}"></script>
 <!--<![endif]-->
