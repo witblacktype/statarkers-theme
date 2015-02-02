@@ -46,7 +46,7 @@ grunt.initConfig({
     watch: {
       scripts: {
         files: ['js/**/*.js'],
-        tasks: ['uglify'],
+        tasks: ['concat','uglify'],
         options: {
           spawn: false,
           livereload: 35729
