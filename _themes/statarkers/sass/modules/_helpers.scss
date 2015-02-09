@@ -48,8 +48,22 @@
 
 .is-hidden { display: none; }
 
-.success { color: $cs-alert-success; }
-.error, .errors { color: $cs-alert-danger; }
+.text--success {
+  color: $cs-alert-success;
+  &:link, &:visited { color: $cs-alert-success; }
+  &:hover, &:active, &:focus { color: $cs-alert-success; }
+}
+
+.text--warning {
+  color: $cs-alert-warning;
+  &:link, &:visited { color: $cs-alert-warning; }
+  &:hover, &:active, &:focus { color: $cs-alert-warning; }
+}
+.text--danger {
+  color: $cs-alert-danger;
+  &:link, &:visited { color: $cs-alert-danger; }
+  &:hover, &:active, &:focus { color: $cs-alert-danger; }
+}
 
 .tel,
 .email {

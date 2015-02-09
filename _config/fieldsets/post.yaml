@@ -1,5 +1,5 @@
-include: meta                  # include the meta fields
 hide: true
+include: meta                  # include the meta fields
 
 fields:
   title:
@@ -13,10 +13,6 @@ fields:
   author:
     display: Author
     type: users
-
-  status:
-    display: Status
-    type: status
 
   featured:
     display: Featured
@@ -38,8 +34,8 @@ fields:
       folder: blog #make sure you rename this to the folder name of your blog
       type: categories
 
-  tags:                       
-    display: Tags          
+  tags:
+    display: Tags
     type: suggest
     create: true
     max_items: 3

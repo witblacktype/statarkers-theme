@@ -1,6 +1,6 @@
 {{# TOP LEVEL PAGES === #}}
 
-{{ if _response != "404" && segment_1 != "blog" }}
+{{ if _response != "404" && segment_1 != blog_name }}
   <title>{{ if meta_title|not_empty }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   {{ if meta_desc|not_empty }}
   <meta name="description" content="{{ meta_desc|striptags }}">
@@ -9,19 +9,19 @@
 
 {{# BLOG =============== #}}
 
-{{ if segment_1 == "blog" && (segment_2 != "categories" || segment_2 != "tags") && segment_3 == "" }}
+{{ if segment_1 == blog_name && (segment_2 != "categories" || segment_2 != "tags") && segment_3 == "" }}
   <title>{{ if meta_title|not_empty }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   {{ if meta_desc|not_empty }}
   <meta name="description" content="{{ meta_desc|striptags }}">
   {{ endif }}
 {{ endif }}
 
-{{ if segment_1 == "blog" && segment_2 == "categories" }}
+{{ if segment_1 == blog_name && segment_2 == "categories" }}
   <title>Articles With The Category {{ taxonomy_slug|deslugify|title }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   <meta name="description" content="A selection of articles that are in the category of {{ taxonomy_slug|deslugify }}.">
 {{ endif }}
 
-{{ if segment_1 == "blog" && segment_2 == "tags" }}
+{{ if segment_1 == blog_name && segment_2 == "tags" }}
   <title>Articles Tagged {{ taxonomy_slug|deslugify|title }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   <meta name="description" content="A selection of articles tagged under {{ taxonomy_slug|deslugify }}.">
 {{ endif }}
