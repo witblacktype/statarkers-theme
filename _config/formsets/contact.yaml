@@ -30,6 +30,8 @@ required:
 validate:
   name: alpha
   email: email
+  
+honeypot: raven_address
 
 messages:
   name: "Your name must be made of letters only."
