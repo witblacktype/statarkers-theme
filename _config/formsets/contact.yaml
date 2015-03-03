@@ -30,7 +30,6 @@ required:
 validate:
   name: alpha
   email: email
-  raven_address: primeNumber
 
 messages:
   name: "Your name must be made of letters only."
