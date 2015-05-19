@@ -20,21 +20,10 @@
 {{# Place favicon.ico and apple-touch-icon.png in the root directory. #}}
 
 <!-- styles -->
-<link rel="stylesheet" href="{{ theme:asset src="bower_components/normalize-css/normalize.css" }}">
-<!--[if gte IE 8]><!-->
 <link rel="stylesheet" href="{{ theme:css }}">
-<!--<![endif]-->
 
 <!-- feeds -->
 <link rel="alternate" type="application/rss+xml" href="{{ _site_url }}feed" title="{{ _site_name }} RSS Feed">
-
-<!-- scripts -->
-<script src="{{ theme:asset src="bower_components/jquery/dist/jquery.min.js" }}"></script>
-<script src="{{ theme:asset src="bower_components/modernizr/modernizr.js" }}"></script>
-<!--[if IE 8]>
-<script src="{{ theme:js src="libs/DOMAssistantCompressed-2.8.1.js" }}"></script>
-<script src="{{ theme:asset src="bower_components/selectivizr/selectivizr.js" }}"></script>
-<![endif]-->
 
 <!-- analytics -->
 {{ theme:partial src="_analytics" }}
